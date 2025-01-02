@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Home",
+        "slug": "/home"
+    },
+    {
+        "name": "Sobre",
+        "slug": "/sobre"
+    },
+    {
+        "name": "Atuação",
+        "slug": "/atuacao"
+    },
+    {
+        "name": "Institucional",
+        "slug": "/institucional"
+    },
+    {
+        "name": "Blog",
+        "slug": "/blog"
+    },
+    {
+        "name": "Contato",
+        "slug": "/contato"
+    }
+]

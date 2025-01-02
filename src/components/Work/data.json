@@ -1,0 +1,37 @@
+{
+    "top": [
+        {
+            "title": "Análise e orientação:",
+            "description": "Nossa equipe irá analisar a sua apólice de seguro para orientar você quanto aos seus Direitos.",
+            "icon": "/search.png"
+        },
+        {
+            "title": "Manifestação:",
+            "description": "Após compreendermos o seu contrato, realizamos a manifestação tanto do seguro, quanto do segurado, a fim de termos o melhor relacionamento e cumprirmos a apólice.",
+            "icon": "/file.png"
+        },
+        {
+            "title": "Apoio Judicial:",
+            "description": "Em caso de negativas, podemos auxiliar você na ação judicial referente aos seus direitos como segurado.",
+            "icon": "/shield.png"
+        }
+    ],
+
+    "bottom": [
+        {
+            "title": "Negativas Injustas:",
+            "description": "Muitas vezes, seguradoras negam o pagamento da indenização sob alegações de falta de cobertura ou questões contratuais. Analisamos seu contrato e contestamos negativas injustas.",
+            "icon": "/person.png"
+        },
+        {
+            "title": "Documentação Completa:",
+            "description": "Auxiliamos na preparação e envio da documentação necessária para agilizar o processo de indenização.",
+            "icon": "/folder.png"
+        },
+        {
+            "title": "Apoio Jurídico Integral:",
+            "description": "Se necessário, representamos você judicialmente para garantir que seus direitos sejam respeitados e que você receba a indenização justa.",
+            "icon": "/handshake.png"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "title" : "Direito Empresarial",
+        "description" : "Atuação consultiva e contenciosa dentro da ampla área do direito empresarial, com foco especializado em reorganização societária, holding patrimonial, holding familiar, compra e venda de empresas, compra de participações em empresas e disputas societárias.",
+        "icon" : "necktie.png"
+    },
+    {
+        "title" : "Direito Tributário",
+        "description" : "Defesas em autuações fiscais, dívida ativa, recuperação de pagamentos de tributos indevidos, planejamento tributário.",
+        "icon" : "hammer.png"
+    },
+    {
+        "title" : "Direito Bancário",
+        "description" : "Assessoria especializada em revisão de dívidas bancárias, readequação de juros, negociação judicial e extrajudicial, para empresas e pessoas físicas. Experiência em dívidas de grande valor e complexidade.",
+        "icon" : "scales.png"
+    },
+    {
+        "title" : "Direito Cível",
+        "description" : "Atuação com larga experiência em contratos, ações indenizatórias (responsabilidade civil), seguros (securitário) e direito imobiliário.",
+        "icon" : "book.png"
+    },
+    {
+        "title" : "Insolvência",
+        "description" : "Somos especialistas em recuperação judicial, atuando com equipe multidisciplinar durante todo o processo seja extrajudicial ou judicial.",
+        "icon" : "bill.png",
+        "hasButton" : true,
+        "buttonSlug" : "/recuperacao-judicial"
+    },
+    {
+        "title" : "Securitário",
+        "description" : "Atuamos na defesa dos interesses dos segurados, sejam Pessoas Jurídicas ou Pessoas Físicas, em face de abusos cometidos contra a lei de seguros, código civil e do código de defesa do consumidor.",
+        "icon" : "car.png",
+        "hasButton" : true,
+        "buttonSlug" : "/securitario"
+    }
+]
