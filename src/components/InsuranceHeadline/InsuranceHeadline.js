@@ -59,6 +59,7 @@ export const InsuranceHeadline = () => {
             width: isMobile ? "17.5vw" : "50vw",
             height: "4.5vh",
             marginTop: "1vw",
+            padding: 0,
             borderRadius: 5
         },
 

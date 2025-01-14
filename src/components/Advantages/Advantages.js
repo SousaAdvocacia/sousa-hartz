@@ -1,29 +1,32 @@
-import { fontWeight } from "@mui/system"
 import data from "./data.json"
-import { Button } from "@mui/material"
+import { Button, useMediaQuery } from "@mui/material"
 
 export const Advantages = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
     const styles = {
         main: {
             backgroundColor: "#ffffff",
             color: "#000000",
             width: "100vw",
-            height: "70vh",
+            height: isMobile ? "70vh" : "100vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         },
 
         box: {
-            width: "70%",
+            width: isMobile ? "70%" : "100%",
             height: "90%",
             display: "flex",
+            flexDirection: isMobile ? "row" : "column",
             alignItems: "center",
             justifyContent: "space-between"
         },
 
         titleBox: {
-            width: "55%",
+            width: isMobile ? "55%" : "80%",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -32,7 +35,7 @@ export const Advantages = () => {
         },
 
         textArea: {
-            width: "50%",
+            width: isMobile ? "50%" : "80%",
             display: "flex",
             flexDirection: "column",
             alignItems: "start"
@@ -40,7 +43,8 @@ export const Advantages = () => {
 
         title: {
             width: "100%",
-            fontSize: "40px"
+            fontSize: "40px",
+            textAlign: isMobile ? "left" : "center"
         },
 
         button: {
@@ -49,11 +53,12 @@ export const Advantages = () => {
             width: "80%",
             height: "4.5vh",
             borderRadius: 5,
-            padding: 0
+            padding: 0,
+            alignSelf: isMobile ? "start" : "center"
         },
 
         cardSection: {
-            width: "45%",
+            width: isMobile ? "45%" : "80%",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -80,7 +85,7 @@ export const Advantages = () => {
             color: "#ffffff",
             width: "70%",
             marginRight: "auto",
-            fontSize: "20px",
+            fontSize: isMobile ? "18px" : "13px",
             fontWeight: 500
         }
     }

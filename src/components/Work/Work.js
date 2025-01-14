@@ -1,6 +1,10 @@
+import { useMediaQuery } from "@mui/material";
 import data from "./data.json"
 
 export const Work = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+    
     const styles = {
         main: {
             backgroundColor: "#ffffff",
@@ -14,58 +18,58 @@ export const Work = () => {
         topBox: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
             backgroundPosition: 'left',
-            backgroundSize: '45% 100%',
+            backgroundSize: isMobile ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
             width: "100%",
-            height: "70vh",
+            height: isMobile ? "70vh" : "110vh",
             marginBottom: "10vh",
             display: "flex",
             alignItems: "center",
-            justifyContent: "end"
+            justifyContent: isMobile ? "end" : "center"
         },
 
         topCard: {
             backgroundColor: "#bf996f",
-            width: "62.5%",
+            width: isMobile ? "62.5%" : "100%",
             height: "85%",
             borderTopLeftRadius: 30,
             borderBottomLeftRadius: 30,
             display: "flex",
             flexDirection: "column",
-            alignItems: "start",
+            alignItems: isMobile ? "start" : "center",
             justifyContent: "center",
             boxSizing: "border-box",
-            paddingLeft: "5vw"
+            padding: isMobile ? "0 0 0 5vw" : "0 5vw 0 5vw"
         },
 
         bottomBox: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
             backgroundPosition: 'right',
-            backgroundSize: '45% 100%',
+            backgroundSize: isMobile ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
             width: "100%",
-            height: "70vh",
+            height: isMobile ? "70vh" : "110vh",
             display: "flex",
             alignItems: "center",
-            justifyContent: "start"
+            justifyContent: isMobile ? "start" : "center"
         },
 
         bottomCard: {
             backgroundColor: "#bf996f",
-            width: "62.5%",
+            width: isMobile ? "62.5%" : "100%",
             height: "85%",
             borderTopRightRadius: 30,
             borderBottomRightRadius: 30,
             display: "flex",
             flexDirection: "column",
-            alignItems: "end",
+            alignItems: isMobile ? "end" : "center",
             justifyContent: "center",
             boxSizing: "border-box",
-            paddingRight: "5vw"
+            padding: isMobile ? "0 5vw 0 0" : "0 5vw 0 5vw"
         },
 
         textBox: {
-            width: "70%"
+            width: isMobile ? "70%" : "100%"
         },
 
         title: {
@@ -81,18 +85,19 @@ export const Work = () => {
             width: "100%",
             height: "50%",
             display: "flex",
+            flexDirection: isMobile ? "row" : "column",
             justifyContent: "space-between"
         },
 
         textCard: {
-            width: "30%",
+            width: isMobile ? "30%" : "100%",
             height: "100%"
         },
 
         iconBox: {
             backgroundColor: "#ffffff",
-            width: "2vw",
-            height: "2vw",
+            width: isMobile ? "2vw" : "10vw",
+            height: isMobile ? "2vw" : "10vw",
             borderRadius: 5,
             marginBottom: "0.5vw",
             display: "flex",
@@ -101,7 +106,7 @@ export const Work = () => {
         },
 
         icon: {
-            width: "1vw"
+            width: isMobile ? "1vw" : "7vw"
         }
     }
 

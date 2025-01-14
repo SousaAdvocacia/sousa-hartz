@@ -9,7 +9,7 @@ export const Rights = () => {
         main: {
             backgroundColor: "#ffffff",
             width: "100vw",
-            height: "160vh",
+            height: isMobile ? "65vh" : "160vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",

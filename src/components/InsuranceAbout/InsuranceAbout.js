@@ -9,26 +9,33 @@ export const InsuranceAbout = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "100vw",
-            height: "60vh",
+            height: isMobile ? "60vh" : "110vh", 
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         },
 
         box: {
-            width: "50%",
-            height: "100%",
+            width: isMobile ? "50%" : "100%",
+            height: isMobile ? "100%" : "90%",
             display: "flex",
+            flexDirection: isMobile ? "row" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between"
         },
 
         textBox: {
-            width: "60%"
+            width: isMobile ? "60%" : "80%",
+            textAlign: isMobile ? "left" : "center"
         },
 
         title: {
             margin: "-0.5vw 0 -0.5vw 0"
+        },
+
+        subtitle: {
+            fontWeight: 100,
+            textAlign: isMobile ? "justify" : "center"
         },
 
         description: {
@@ -38,8 +45,8 @@ export const InsuranceAbout = () => {
 
         image: {
             backgroundColor: "#000000",
-            width: "15vw",
-            height: "45vh",
+            width: isMobile ? "15vw" : "60vw",
+            height: isMobile ? "45vh" : "55vh",
             objectFit: "cover"
         }
     }
@@ -51,9 +58,9 @@ export const InsuranceAbout = () => {
 
                 <div style={styles.textBox}>
 
-                    <h3 style={styles.description}>Quem é o Jonathan Sousa Hartz</h3>
+                    <h3 style={styles.subtitle}>Quem é o Jonathan Sousa Hartz</h3>
                     <h1 style={styles.title}>Jonathan Sousa Hartz</h1>
-                    <h2 style={styles.description}>OAB/RJ RJ123456</h2>
+                    <h2 style={styles.subtitle}>OAB/RJ RJ123456</h2>
                     <h3 style={styles.description}>
                         Formado em Direito pela UFSM, em 2000, Marcos Rutzen é especialista nas áreas cível, bancária, tributária, empresarial e imobiliária.
                         Natural de Três de Maio, o advogado é também empresário da área de vinhos, uma paixão que virou negócio. Músico amador e entusiasta

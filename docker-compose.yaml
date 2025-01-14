@@ -1,6 +1,6 @@
 services:
   frontend:
     build: .
-    container_name: aplica-e-vende
+    container_name: sousahartz
     ports:
       - '3000:3000'

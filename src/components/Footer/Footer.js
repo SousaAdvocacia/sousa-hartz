@@ -96,11 +96,11 @@ export const Footer = () => {
 
                     <h3 style={styles.description}>
 
-                        <span><img style={styles.textIcon} src="/email.png" /> placeholder@email.com </span>
+                        <span><img style={styles.textIcon} src="/email.png" /> sousahartz@gmail.com </span>
                         <br />
-                        <span><img style={styles.textIcon} src="/phone.png" /> (01) 2345-6789 </span>
+                        <span><img style={styles.textIcon} src="/phone.png" /> (21) 99900-3367 </span>
                         <br />
-                        <span><img style={styles.textIcon} src="/whatsapp.png" /> (01) 2345-6789 </span>
+                        <span>CNPJ: 58.531.639/0001-83 </span>
                     </h3>
 
                 </div>
@@ -129,8 +129,6 @@ export const Footer = () => {
                         <img style={styles.icon} src="/instagram.png" />
                         <img style={styles.icon} src="/email.png" />
                     </div>
-
-                    <img style={styles.map} src="/map-placeholder.png"/>
 
                 </div>
             </div>
