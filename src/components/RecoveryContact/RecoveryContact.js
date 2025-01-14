@@ -9,24 +9,25 @@ export const RecoveryContact = () => {
             backgroundColor: "#ffffff",
             color: "#000000",
             width: "100vw",
-            height: isMobile ? "70vh" : "90vh",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column",
             alignItems: "center",
-            justifyContent: isMobile ? "center" : "space-between",
-            padding: isMobile ? 0 : "5vh 0 5vh 0"
+            justifyContent: isMobile ? "center" : "space-between"
         },
     
         card: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "30vw" : "100vw",
-            height: isMobile ? "50vh" : "40vh",
+            height: isMobile ? "auto" : "40vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: 10
+            borderRadius: 10,
+            margin: "5vh 0 5vh 0",
+            padding: "3vw 0 3vw 0"
         },
     
         title: {
@@ -53,12 +54,13 @@ export const RecoveryContact = () => {
     
         form: {
             width: isMobile  ? "30vw" : "100vw",
-            height: "45vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-between",
-            textAlign: "left"
+            textAlign: "left",
+            marginBottom: isMobile ? 0 : "5vh"
         },
     
         label: {
@@ -84,11 +86,14 @@ export const RecoveryContact = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "25vw" : "80vw",
-            height: "5vh",
-            marginBottom: "2vw",
+            height: "auto",
             padding : 0,
             borderRadius: 5
-        }
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
     }
 
     return(
@@ -128,7 +133,7 @@ export const RecoveryContact = () => {
                 <input placeholder="Deixe aqui sua mensagem" style={styles.input}></input>
 
                 <Button variant="container" style={styles.button}>
-                    <h3>
+                    <h3 style={styles.buttonText}>
                         Entre em contato
                     </h3>
                 </Button>

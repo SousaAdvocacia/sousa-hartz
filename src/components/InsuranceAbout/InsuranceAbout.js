@@ -9,23 +9,24 @@ export const InsuranceAbout = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "100vw",
-            height: isMobile ? "60vh" : "110vh", 
+            height: "auto", 
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         },
 
         box: {
-            width: isMobile ? "50%" : "100%",
-            height: isMobile ? "100%" : "90%",
+            width: isMobile ? "65%" : "100%",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column-reverse",
             alignItems: "center",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
+            margin: isMobile ? "5vh 0 5vh 0" : "5vh 0 8vh 0"
         },
 
         textBox: {
-            width: isMobile ? "60%" : "80%",
+            width: isMobile ? "65%" : "80%",
             textAlign: isMobile ? "left" : "center"
         },
 
@@ -45,9 +46,10 @@ export const InsuranceAbout = () => {
 
         image: {
             backgroundColor: "#000000",
-            width: isMobile ? "15vw" : "60vw",
-            height: isMobile ? "45vh" : "55vh",
-            objectFit: "cover"
+            width: isMobile ? "20vw" : "60vw",
+            height: isMobile ? "55vh" : "40vh",
+            objectFit: "cover",
+            marginBottom: isMobile ? 0 : "2vh"
         }
     }
 

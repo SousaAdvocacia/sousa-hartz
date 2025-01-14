@@ -57,10 +57,14 @@ export const InsuranceHeadline = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "17.5vw" : "50vw",
-            height: "4.5vh",
+            height: "auto",
             marginTop: "1vw",
             padding: 0,
             borderRadius: 5
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
         },
 
         imageBox: {
@@ -111,7 +115,7 @@ export const InsuranceHeadline = () => {
                     </h2>
 
                     <Button variant="container" style={styles.button}>
-                        <h3>
+                        <h3 style={styles.buttonText}>
                             Entre em contato
                         </h3>
                     </Button>

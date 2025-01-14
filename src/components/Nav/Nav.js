@@ -41,7 +41,7 @@ export const Nav = () => {
         },
 
         menu: {
-            width: "35vw",
+            width: "27.5vw",
             display: "flex",
             justifyContent: "space-between"
         },

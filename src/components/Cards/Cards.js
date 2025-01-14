@@ -8,7 +8,7 @@ export const Cards = () => {
             backgroundColor: "#000000",
             color: "#ffffff",
             width: "100vw",
-            height: "80vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
@@ -16,11 +16,12 @@ export const Cards = () => {
     
         box: {
             width: "60vw",
-            height: "80vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            margin: "5vh 0 5vh 0"
         },
     
         title: {
@@ -55,7 +56,7 @@ export const Cards = () => {
         card: {
             backgroundColor: "rgb(191, 153, 111, 0.5)",
             width: "14vw",
-            height: "20vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -67,17 +68,23 @@ export const Cards = () => {
         },
     
         cardIcon: {
-            width: "5vw"
+            maxWidth: "5vw",
+            width: "auto"
         },
     
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "35vw",
-            height: "5vh",
+            height: "auto",
             marginBottom: "2vw",
+            padding: 0,
             borderRadius: 5
-        }
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
     }
 
     return (
@@ -123,7 +130,7 @@ export const Cards = () => {
                 </div>
 
                 <Button variant="container" style={styles.button}>
-                    <h3>
+                    <h3 style={styles.buttonText}>
                         Entre em contato
                     </h3>
                 </Button>

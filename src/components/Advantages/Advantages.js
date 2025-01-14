@@ -10,7 +10,7 @@ export const Advantages = () => {
             backgroundColor: "#ffffff",
             color: "#000000",
             width: "100vw",
-            height: isMobile ? "70vh" : "100vh",
+            height: isMobile ? "auto" : "100vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -18,11 +18,12 @@ export const Advantages = () => {
 
         box: {
             width: isMobile ? "70%" : "100%",
-            height: "90%",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column",
             alignItems: "center",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
+            marginTop: "4vh"
         },
 
         titleBox: {
@@ -51,15 +52,19 @@ export const Advantages = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "80%",
-            height: "4.5vh",
+            height: "auto",
             borderRadius: 5,
             padding: 0,
             alignSelf: isMobile ? "start" : "center"
         },
 
+        buttonText: {
+            margin: "0.5vw"
+        },
+
         cardSection: {
             width: isMobile ? "45%" : "80%",
-            height: "100%",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between"
@@ -68,11 +73,14 @@ export const Advantages = () => {
         card: {
             backgroundColor: "#bf996f",
             width: "100%",
-            height: "30%",
+            height: "auto",
+            minHeight: "15vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            borderRadius: 15
+            borderRadius: 15,
+            margin: "2vh 0 2vh 0",
+            padding: "1vh 0 1vh 0"
         },
 
         icon: {
@@ -85,7 +93,6 @@ export const Advantages = () => {
             color: "#ffffff",
             width: "70%",
             marginRight: "auto",
-            fontSize: isMobile ? "18px" : "13px",
             fontWeight: 500
         }
     }
@@ -102,7 +109,7 @@ export const Advantages = () => {
                         <h1 style={styles.title}>Por que escolher nosso escritório?</h1>
 
                         <Button variant="container" style={styles.button}>
-                            <h3>
+                            <h3 style={styles.buttonText}>
                                 Entre em contato
                             </h3>
                         </Button>

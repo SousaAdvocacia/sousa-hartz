@@ -1,10 +1,8 @@
-import { AccordionList } from "../AccordionList/AccordionList";
-import data from "./data.json";
 import { Button, useMediaQuery } from "@mui/material";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 
-export const Information = () => {
+export const RecoveryInfo = () => {
     const [muted, setMuted] = useState(true);
     const handleToggleMute = () => setMuted(current => !current);
 
@@ -19,137 +17,83 @@ export const Information = () => {
             display: "flex",
             flexDirection: "column"
         },
-    
-        topBox: {
-            backgroundColor: "#ffffff",
+
+        box: {
+            backgroundColor: "#efefef",
             width: "100vw",
             height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column",
             alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden"
+            justifyContent: "center"
         },
-    
+
         boxContent: {
             width: isMobile ? "50vw" : "100vw",
-            height: isMobile ? "45vh" : "40vh",
+            height: "auto",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
         },
-    
+
+        title: {
+            fontWeight: 800
+        },
+
+        description: {
+            fontWeight: 300
+        },
+
         textBox: {
             width: isMobile ? "30vw" : "90vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "flex-start" : "center"
+            alignItems: isMobile ? "flex-start" : "center",
+            margin: isMobile ? 0 : "5vh 0 0 0",
+            padding: "5vh 0 5vh 0"
         },
-    
-        title: {
-            fontWeight: 800
-        },
-    
-        description: {
-            fontWeight: 300
-        },
-    
-        accordionBox: {
-            backgroundColor: "#bf996f",
-            width: isMobile ? "50vw" : "100vw",
-            height: isMobile ? "45vh" : "36vh",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center"
-        },
-    
-        accordionText: {
-            backgroundColor: "#efefef"
-        },
-    
-        bottomBox: {
-            backgroundColor: "#efefef",
-            width: "100vw",
-            height: isMobile ? "60vh": "auto",
-            display: "flex",
-            flexDirection: isMobile ? "row" : "column",
-            alignItems: "center",
-            justifyContent: "center",
-        },
-    
-        imageBox: {
-            width: "50vw",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
-        },
-    
+
         image: {
-            width: isMobile ? "40vw" : "80vw"
+            width: isMobile ? "40vw" : "80vw",
+            margin: isMobile ? 0 : "6vh 0 0 0"
         },
-    
+
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "17.5vw" : "70vw",
-            height: "4.5vh",
+            height: "auto",
             marginBottom: isMobile ? "2vw" : 0,
             borderRadius: 5,
             padding: 0
         },
-    
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
+
         videoBox: {
             width: "100vw",
-            height: isMobile ? "65vh" : "40vh",
+            height: "auto",
             display: "flex",
-            alignItems: isMobile ? "flex-start" : "center",
+            alignItems: "flex-start",
             justifyContent: "center"
         },
-    
+
         video: {
-            width: isMobile ? "55vw" : "80vw"
+            width: isMobile ? "55vw" : "80vw",
+            margin: "5vh 0 5vh 0"
         }
     }
 
     return (
         <div style={styles.main}>
 
-            <div style={styles.topBox}>
-
+            <div style={styles.box}>
                 <div style={styles.boxContent}>
-
-                    <div style={styles.textBox}>
-
-                        <h2 style={styles.title}>• ENTENDA SOBRE RECUPERAÇÃO JUDICIAL</h2>
-
-                        <h3 style={styles.description}>
-                            A recuperação judicial configura-se como um procedimento legal previsto na Lei nº 11.101/2005, que visa à superação da situação de
-                            crise econômico-financeira do devedor, possibilitando a preservação da empresa, sua função social e o estímulo à atividade econômica.
-                        </h3>
-                    </div>
-
-                </div>
-
-                <div style={styles.boxContent}>
-
-                    <div style={styles.accordionBox}>
-
-                        {AccordionList(data)}
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div style={styles.bottomBox}>
-                <div style={styles.boxContent}>
-                    <div style={styles.imageBox}>
 
                         <img style={styles.image} src="/placeholder1.jpg" />
-
-                    </div>
                 </div>
 
                 <div style={styles.boxContent}>
@@ -170,7 +114,7 @@ export const Information = () => {
                         </h3>
 
                         <Button variant="container" style={styles.button}>
-                            <h3>
+                            <h3 style={styles.buttonText}>
                                 Entre em contato
                             </h3>
                         </Button>

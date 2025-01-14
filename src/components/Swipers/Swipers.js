@@ -10,29 +10,31 @@ export const Swipers = () => {
             backgroundColor: "#000000",
             color: "#ffffff",
             width: "100vw",
-            height: isMobile ? "90vh" : "140vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
         },
     
         box: {
-            width: isMobile ? "40vw" : "70vw",
-            height: isMobile ? "90vh" : "140vh",
+            width: isMobile ? "50vw" : "70vw",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            margin: "5vh 0 5vh 0"
         },
     
         title: {
             width: "100%",
-            fontWeight: 800
+            fontWeight: 800,
+            marginTop: 0
         },
     
         cardColumn: {
             width: "100%",
-            height: isMobile ? "60vh" : "110vh",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column",
             flexWrap: "wrap",
@@ -42,13 +44,17 @@ export const Swipers = () => {
         card: {
             backgroundColor: "#ffffff",
             color: "#000000",
-            width: isMobile ? "19.5vw" : "100%",
-            height: "10vh",
+            width: isMobile ? "49%" : "100%",
+            minHeight: "10vh",
+            height: "auto",
+            marginBottom: "2vh",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: 5
+            borderRadius: 5,
+            boxSizing: "border-box",
+            padding: "0.5vw"
         },
     
         cardNumber: {
@@ -69,10 +75,13 @@ export const Swipers = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "35vw" : "70vw",
-            height: "5vh",
-            marginTop: isMobile ? "1.5vw" : "5vh",
+            height: "auto",
             padding: 0,
             borderRadius: 5
+        },
+
+        buttonText: {
+            margin: "0.5vw 0 0.5vw 0"
         }
     }
 
@@ -91,7 +100,7 @@ export const Swipers = () => {
 
                                 <h1 style={styles.cardNumber}>{item.number}</h1>
 
-                                <h4 style={styles.cardDescription}>{item.text}</h4>
+                                <h3 style={styles.cardDescription}>{item.text}</h3>
 
                             </div>
                         );
@@ -100,7 +109,7 @@ export const Swipers = () => {
                 </div>
 
                 <Button variant="container" style={styles.button}>
-                    <h3>
+                    <h3 style={styles.buttonText}>
                         QUERO MARCAR UM ATENDIMENTO
                     </h3>
                 </Button>

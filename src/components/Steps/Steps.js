@@ -10,7 +10,7 @@ export const Steps = () => {
             backgroundColor: "#ffffff",
             color: "#000000",
             width: "100vw",
-            height: isMobile ? "90vh" : "160vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -19,16 +19,18 @@ export const Steps = () => {
     
         box: {
             width: "60vw",
-            height: "90vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            margin: "5vh 0 5vh 0"
         },
     
         title: {
             width: "60vw",
-            fontWeight: 800
+            fontWeight: 800,
+            marginTop: 0
         },
     
         description: {
@@ -39,15 +41,17 @@ export const Steps = () => {
         stepsRow: {
             backgroundColor: "#efefef",
             width: isMobile ? "60vw" : "80vw",
-            height: isMobile ? "50vh" : "160vh",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
+            marginBottom: "3vh",
+            paddingTop: isMobile ? 0 : "5vh"
         },
     
         step: {
             width: "12vw",
-            height: isMobile ? "60vh" : "30vh",
+            height: isMobile ? "auto" : "30vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -82,11 +86,15 @@ export const Steps = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "35vw" : "80vw",
-            height: isMobile ? "5vh" : "5vh",
-            marginTop: "1.5vw",
+            height: "auto",
+            marginTop: "auto",
             padding: 0,
             borderRadius: 5
-        }
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
     }
 
     return (
@@ -127,7 +135,7 @@ export const Steps = () => {
                 </div>
 
                 <Button variant="container" style={styles.button}>
-                    <h3>
+                    <h3 style={styles.buttonText}>
                         QUERO DISCUTIR SOBRE MINHA EMPRESA
                     </h3>
                 </Button>

@@ -1,5 +1,5 @@
 {
-    "first": [
+    "content": [
         {
             "icon": "/1.png",
             "text": "Solução completa para recuperação de empresas"
@@ -15,10 +15,7 @@
         {
             "icon": "/4.png",
             "text": "Elaboramos plano de recuperação financeira"
-        }
-    ],
-
-    "second": [
+        },
         {
             "icon": "/5.png",
             "text": "Modelo de Suficiência Recuperacional"

@@ -21,7 +21,7 @@ export const Work = () => {
             backgroundSize: isMobile ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
             width: "100%",
-            height: isMobile ? "70vh" : "110vh",
+            height: isMobile ? "auto" : "110vh",
             marginBottom: "10vh",
             display: "flex",
             alignItems: "center",
@@ -31,7 +31,7 @@ export const Work = () => {
         topCard: {
             backgroundColor: "#bf996f",
             width: isMobile ? "62.5%" : "100%",
-            height: "85%",
+            height: "auto",
             borderTopLeftRadius: 30,
             borderBottomLeftRadius: 30,
             display: "flex",
@@ -39,7 +39,8 @@ export const Work = () => {
             alignItems: isMobile ? "start" : "center",
             justifyContent: "center",
             boxSizing: "border-box",
-            padding: isMobile ? "0 0 0 5vw" : "0 5vw 0 5vw"
+            margin: "8vh 0 8vh 0",
+            padding: isMobile ? "5vh 0 5vh 5vw" : "0 5vw 0 5vw"
         },
 
         bottomBox: {
@@ -48,7 +49,7 @@ export const Work = () => {
             backgroundSize: isMobile ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
             width: "100%",
-            height: isMobile ? "70vh" : "110vh",
+            height: isMobile ? "auto" : "110vh",
             display: "flex",
             alignItems: "center",
             justifyContent: isMobile ? "start" : "center"
@@ -57,7 +58,7 @@ export const Work = () => {
         bottomCard: {
             backgroundColor: "#bf996f",
             width: isMobile ? "62.5%" : "100%",
-            height: "85%",
+            height: "auto",
             borderTopRightRadius: 30,
             borderBottomRightRadius: 30,
             display: "flex",
@@ -65,7 +66,8 @@ export const Work = () => {
             alignItems: isMobile ? "end" : "center",
             justifyContent: "center",
             boxSizing: "border-box",
-            padding: isMobile ? "0 5vw 0 0" : "0 5vw 0 5vw"
+            margin: "8vh 0 8vh 0",
+            padding: isMobile ? "5vh 5vw 5vh 0" : "0 5vw 0 5vw"
         },
 
         textBox: {

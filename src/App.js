@@ -38,8 +38,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/recuperacao-judicial" element={<Recovery />} />
         <Route path="/securitario" element={<Insurance />} />
-        <Route path="/contato" element={<Contact />} />
-        <Route path="/atuacao" element={<Activity />} />
 
       </Routes>
 

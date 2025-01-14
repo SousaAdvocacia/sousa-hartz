@@ -9,30 +9,31 @@ export const Rights = () => {
         main: {
             backgroundColor: "#ffffff",
             width: "100vw",
-            height: isMobile ? "65vh" : "160vh",
+            height: "auto",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
         },
 
         box: {
-            width: isMobile ? "70%" : "80%",
+            width: isMobile ? "70%" : "100%",
             height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
-            marginBottom: "2.5vh"
+            margin: isMobile ? "7.5vh 0 7.5vh 0" : "0 0 2.5vh 0"
         },
 
         textBox: {
-            width: isMobile ? "90%" : "100%",
+            width: isMobile ? "90%" : "80%",
             height: "80%",
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
             alignItems: "center",
-            justifyContent: "left"
+            justifyContent: "left",
+            marginTop: isMobile ? 0 : "2.5vh"
         },
 
         title: {
@@ -58,15 +59,17 @@ export const Rights = () => {
         },
 
         imageBox: {
-            width: isMobile ? "40%" : "80%",
+            width: isMobile ? "40%" : "100%",
             height: "100%",
             display: "flex",
-            margin: isMobile ? 0 : "5vh 0 5vh 0", 
+            margin: isMobile ? 0 : "0 0 5vh 0", 
             alignItems: "center"
         },
 
         image: {
-            width: "100%"
+            width: "100%",
+            height: isMobile ? "" : "35vh",
+            objectFit: isMobile ? "" : "cover"
         }
     }
 

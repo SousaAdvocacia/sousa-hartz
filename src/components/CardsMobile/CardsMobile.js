@@ -11,7 +11,7 @@ export const CardsMobile = () => {
             backgroundColor: "#000000",
             color: "#ffffff",
             width: "100vw",
-            height: "80vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
@@ -19,11 +19,12 @@ export const CardsMobile = () => {
 
         box: {
             width: "60vw",
-            height: "80vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            margin: "5vh 0 5vh 0"
         },
 
         title: {
@@ -47,19 +48,31 @@ export const CardsMobile = () => {
         },
 
         carousel: {
-            backgroundColor: "rgb(191, 153, 111, 0.5)",
             width: "55vw",
-            height: "25vh",
+            height: "auto",
             display: "flex",
             flexDirection: "row",
-            borderRadius: 5,
             alignItems: "center",
             justifyContent: "center",
-            margin: "3vw 0 3vw 0"
+            margin: "3vw 0 3vw 0",
+        },
+
+        card: {
+            backgroundColor: "rgb(191, 153, 111, 0.5)",
+            width: "90%",
+            height: "27.5vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            boxSizing: "border-box",
+            margin: "0 auto 0 auto",
+            padding: "5vw 2vw 5vw 2vw",
+            borderRadius: 15
         },
 
         cardIcon: {
-            width: "8vw",
+            width: "12vw",
             margin: "5vw auto 5vw auto"
         },
 
@@ -71,11 +84,15 @@ export const CardsMobile = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "55vw",
-            height: "5vh",
+            height: "auto",
             marginBottom: "2vw",
             padding: 0,
             borderRadius: 5
-        }
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
     }
 
     return (
@@ -97,12 +114,14 @@ export const CardsMobile = () => {
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }}>
-                        {data.first.map((item) => {
+                        {data.content.map((item) => {
 
                             return (
-                                <div style={{display: "flex",width: "100%"}}>
-                                    <img style={styles.cardIcon} src={item.icon} />
-                                    <h3 style={styles.cardDescription}>{item.text}</h3>
+                                <div>
+                                    <div style={styles.card}>
+                                        <img style={styles.cardIcon} src={item.icon} />
+                                        <h3 style={styles.cardDescription}>{item.text}</h3>
+                                    </div>
                                 </div>
                             )
 
@@ -111,7 +130,7 @@ export const CardsMobile = () => {
                 </div>
 
                 <Button variant="container" style={styles.button}>
-                    <h3>
+                    <h3 style={styles.buttonText}>
                         Entre em contato
                     </h3>
                 </Button>

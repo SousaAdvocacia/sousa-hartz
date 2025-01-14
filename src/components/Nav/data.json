@@ -14,13 +14,5 @@
     {
         "name": "Institucional",
         "slug": "/#institucional"
-    },
-    {
-        "name": "Blog",
-        "slug": "/#blog"
-    },
-    {
-        "name": "Contato",
-        "slug": "/contato"
     }
 ]

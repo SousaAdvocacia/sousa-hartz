@@ -53,17 +53,21 @@ export const RecoveryHeadline = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "17.5vw" : "50vw",
-            height: "4.5vh",
+            height: "auto",
             marginBottom: "2vw",
             padding: 0,
             borderRadius: 5,
             alignSelf: isMobile ? "start" : "center",
             filter: "drop-shadow(3px 3px 3px #000000)"
         },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
     
         profile: {
             height: isMobile ? "55vh" : "40vh",
-            margin: isMobile ? "5vw" : "auto 0 0 0"
+            marginTop: "auto",
         }
     }
 
@@ -88,7 +92,7 @@ export const RecoveryHeadline = () => {
                     </h3>
 
                     <Button variant="container" style={styles.button}>
-                        <h3>
+                        <h3 style={styles.buttonText}>
                             Entre em contato
                         </h3>
                     </Button>

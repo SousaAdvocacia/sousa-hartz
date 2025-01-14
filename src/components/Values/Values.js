@@ -65,7 +65,7 @@ export const Values = () => {
 
         image: {
             width: "100%",
-            height: "40vh",
+            height: isMobile ? "" : "35vh",
             objectFit: isMobile ? "" : "cover"
         }
     }

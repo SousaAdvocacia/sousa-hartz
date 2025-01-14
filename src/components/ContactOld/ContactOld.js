@@ -1,7 +1,7 @@
 import { Button } from "@mui/material"
 import { fontWeight } from "@mui/system"
 
-export const ContactForm = () => {
+export const ContactOld = () => {
     const styles = {
         main: {
             backgroundImage: "url(" + "/contact-bg.jpg" + ")",
@@ -94,10 +94,14 @@ export const ContactForm = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "100%",
-            height: "4.5vh",
+            height: "auto",
             borderRadius: 5,
             padding: 0
-        }
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
+        },
     }
 
     return (
@@ -139,7 +143,7 @@ export const ContactForm = () => {
                         <input placeholder="Mensagem" style={styles.input}></input>
 
                         <Button variant="container" style={styles.button}>
-                            <h3>
+                            <h3 style={styles.buttonText}>
                                 ENVIAR MENSAGEM
                             </h3>
                         </Button>

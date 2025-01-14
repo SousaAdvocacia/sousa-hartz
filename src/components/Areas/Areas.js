@@ -54,10 +54,14 @@ export const Areas = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: isMobile ? "13vw" : "80vw",
-            height: "4.5vh",
+            height: "auto",
             marginTop: "3vw",
             padding: 0,
             borderRadius: 5
+        },
+
+        buttonText: {
+            margin: "0.5vw 0.5vh 0.5vw 0.5vw"
         },
 
         colorSection: {
@@ -151,7 +155,7 @@ export const Areas = () => {
                     </h3>
 
                     <Button variant="container" style={styles.button}>
-                        <h3>
+                        <h3 style={styles.buttonText}>
                             Entre em contato
                         </h3>
                     </Button>
@@ -182,7 +186,7 @@ export const Areas = () => {
 
                                         {item.hasButton ? (
                                             <Button variant="container" href={item.buttonSlug} style={styles.boxButton}>
-                                                <h3>
+                                                <h3 style={styles.buttonText}>
                                                     SAIBA MAIS
                                                 </h3>
                                             </Button>
