@@ -13,19 +13,21 @@ export const HomeAbout = () => {
         },
 
         box: {
+            width: "100vw",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "row" : "column-reverse",
-            width: "100vw",
-            height: isMobile ? "70vh" : "123vh"
+            justifyContent: isMobile ? "" : "start",
         },
 
         textBox: {
-            width: isMobile ? "40vw" : "90vw",
+            width: isMobile ? "45vw" : "90vw",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            margin: isMobile ? "0 auto 0 auto" : "5vw auto 5vw auto"
+            margin: isMobile ? "0 auto 0 auto" : "5vw auto 5vw auto",
+            padding: isMobile ? "5vh 0 5vh 0" : "2vh 0 2vh 0"
         },
 
         title: {

@@ -9,7 +9,7 @@ export const Values = () => {
         main: {
             backgroundColor: "#efefef",
             width: "100vw",
-            height: isMobile ? "65vh" : "130vh",
+            height: "auto",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -17,12 +17,12 @@ export const Values = () => {
 
         box: {
             width: isMobile ? "60%" : "100%",
-            height: "100%",
+            height: "auto",
             display: "flex",
             flexDirection: isMobile ? "" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
-            marginBottom: "2.5vh"
+            marginBottom: isMobile ? "7.5vh" : "2.5vh"
         },
 
         textBox: {
@@ -32,7 +32,8 @@ export const Values = () => {
             flexDirection: isMobile ? "row" : "column",
             flexWrap: "wrap",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            marginTop: isMobile ? 0 : "2.5vh"
         },
 
         title: {
@@ -59,13 +60,12 @@ export const Values = () => {
 
         imageBox: {
             width: isMobile ? "40%" : "100%",
-            height: isMobile ? "100%" : "30%",
-            marginTop: isMobile ? "" : "1.2vh"
+            height: isMobile ? "100%" : "30%"
         },
 
         image: {
             width: "100%",
-            height: "100%",
+            height: "40vh",
             objectFit: isMobile ? "" : "cover"
         }
     }
@@ -93,7 +93,7 @@ export const Values = () => {
 
                 <div style={styles.imageBox}>
 
-                    <img style={styles.image} src="https://rutzen.adv.br/wp-content/uploads/2022/03/Mask-group.png" />
+                    <img style={styles.image} src="/office-image.jpg" />
 
                 </div>
 

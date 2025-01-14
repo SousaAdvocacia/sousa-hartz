@@ -93,7 +93,7 @@ export const Rights = () => {
 
                 <div style={styles.imageBox}>
 
-                    <img style={styles.image} src="https://rutzen.adv.br/wp-content/uploads/2022/03/Mask-group.png" />
+                    <img style={styles.image} src="/office-image.jpg" />
 
                 </div>
 

@@ -7,18 +7,19 @@ export const Areas = () => {
 
     const styles = {
         main: {
-            backgroundColor: "#efefef",
+            backgroundColor: isMobile ? "#efefef" : "#ffffff",
             width: "100vw",
-            height: isMobile ? "100vh" : "190vh",
+            height: isMobile ? "auto" : "auto",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            padding: isMobile ? "8vh 0 8vh 0" : "4vh 0 0 0"
         },
 
         box: {
             backgroundColor: "#ffffff",
             width: isMobile ? "70vw" : "100vw",
-            height: isMobile ? "95vh" : "190vh",
+            height: isMobile ? "auto" : "auto",
             borderRadius: isMobile ? 15 : 0,
             display: "flex",
             flexDirection: isMobile ? "row" : "column"
@@ -26,11 +27,12 @@ export const Areas = () => {
 
         section: {
             width: isMobile ? "35%" : "100%",
-            height: "80vh",
+            height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            marginBottom: isMobile ? 0 : "5vh"
         },
 
         subtitle: {
@@ -61,12 +63,13 @@ export const Areas = () => {
         colorSection: {
             backgroundColor: "#bf996f",
             width: isMobile ? "65%" : "100%",
-            height: isMobile ? "95vh" : "200vh",
+            height: isMobile ? "auto" : "auto",
             borderTopRightRadius: isMobile ? 15 : 0,
             borderBottomRightRadius: isMobile ? 15 : 0,
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            padding: "5vh 0 5vh 0"
         },
 
         textSection: {
