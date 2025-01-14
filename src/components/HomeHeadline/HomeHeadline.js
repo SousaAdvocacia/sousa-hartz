@@ -1,6 +1,9 @@
-import { fontWeight } from "@mui/system"
+import { useMediaQuery } from "@mui/system"
 
 export const Title = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
     const styles = {
         main: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
@@ -9,7 +12,7 @@ export const Title = () => {
             backgroundRepeat: 'no-repeat',
             color: "#ffffff",
             width: "100vw",
-            height: "100vh",
+            height: isMobile? "100vh" : "80vh",
             display: "flex",
             flexDirection: "column"
         },
@@ -26,23 +29,25 @@ export const Title = () => {
         },
 
         textBox: {
-            width: "60vw",
+            width: isMobile ? "60vw" : "100vw",
             display: "flex",
             flexDirection: "column",
             alignSelf: "flex-start",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            textAlign: isMobile ? "left" : "center"
         },
         
         title: {
-            width: "25vw",
-            fontSize: "3vw",
+            width: isMobile ? "25vw" : "80vw",
+            fontSize: isMobile ? "3vw" : "30px",
             margin : 0,
             filter: "drop-shadow(3px 3px 3px #000000)"
         },
 
         description: {
-            width: "25vw",
+            width: isMobile ? "25vw" : "80vw",
+            fontSize: isMobile ? "" : "18px",
             fontWeight: 100,
             filter: "drop-shadow(3px 3px 3px #000000)"
         }

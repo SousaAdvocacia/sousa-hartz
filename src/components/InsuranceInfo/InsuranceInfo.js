@@ -1,4 +1,9 @@
+import { useMediaQuery } from "@mui/material";
+
 export const InsuranceInfo = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
     const styles = {
         main: {
             backgroundColor: "#bf996f",
@@ -11,9 +16,16 @@ export const InsuranceInfo = () => {
             justifyContent: "center"
         },
 
+        title: {
+            width: isMobile ? "60vw" : "90vw",
+            fontSize: isMobile ? "" : "22px",
+            textAlign: "center"
+        },
+
         description: {
-            width: "60vw",
+            width: isMobile ? "60vw" : "90vw",
             textAlign: "center",
+            fontSize: isMobile ? "" : "18px",
             fontWeight: 100
         }
     }

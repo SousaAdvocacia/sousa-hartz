@@ -1,21 +1,25 @@
+import { useMediaQuery } from "@mui/material";
 import data from "./data.json"
 
 export const Values = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
             backgroundColor: "#efefef",
             width: "100vw",
-            height: "65vh",
+            height: isMobile ? "65vh" : "130vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
         },
 
         box: {
-            width: "60%",
+            width: isMobile ? "60%" : "100%",
             height: "100%",
             display: "flex",
+            flexDirection: isMobile ? "" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
             marginBottom: "2.5vh"
@@ -25,7 +29,7 @@ export const Values = () => {
             width: "55%",
             height: "80%",
             display: "flex",
-            flexDirection: "row",
+            flexDirection: isMobile ? "row" : "column",
             flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "center"
@@ -38,34 +42,36 @@ export const Values = () => {
         subtitle: {
             width: "100%",
             fontWeight: 100,
-            margin: "0 0 2vh 0"
+            margin: isMobile ? "0 0 2vh 0" : "0 0 5vh 0"
         },
 
         text: {
-            width: "50%",
+            width: isMobile ? "50%" : "100%",
             display: "flex",
-            flexDirection: "column"
+            flexDirection: "column",
+            textAlign: isMobile ? "left" : "center"
         },
 
         description: {
-            width: "80%",
+            width: isMobile ? "80%" : "100%",
             fontWeight: 100
         },
 
         imageBox: {
-            width: "40%",
-            height: "100%",
-            display: "flex",
-            alignItems: "center"
+            width: isMobile ? "40%" : "100%",
+            height: isMobile ? "100%" : "30%",
+            marginTop: isMobile ? "" : "1.2vh"
         },
 
         image: {
-            width: "100%"
+            width: "100%",
+            height: "100%",
+            objectFit: isMobile ? "" : "cover"
         }
     }
 
     return (
-        <div style={styles.main}>
+        <div id="institucional" style={styles.main}>
 
             <div style={styles.box}>
 

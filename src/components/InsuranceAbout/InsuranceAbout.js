@@ -1,6 +1,9 @@
-import { textAlign } from "@mui/system"
+import { textAlign, useMediaQuery } from "@mui/system"
 
 export const InsuranceAbout = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
     const styles = {
         main: {
             backgroundColor: "#bf996f",

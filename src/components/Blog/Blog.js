@@ -54,7 +54,7 @@ export const Blog = () => {
     }
 
     return (
-        <div style={styles.main}>
+        <div id="blog" style={styles.main}>
 
             <h1 style={styles.title}>Notícias</h1>
 

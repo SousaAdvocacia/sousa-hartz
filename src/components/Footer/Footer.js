@@ -1,4 +1,77 @@
+import { useMediaQuery } from "@mui/material";
+
 export const Footer = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
+    const styles = {
+        main: {
+            backgroundColor: "#000000",
+            color: "#ffffff",
+            width: "100vw",
+            height: isMobile ? "70vh" : "140vh",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center"
+        },
+    
+        box: {
+            width: isMobile ? "70vw" : "90vw",
+            height: isMobile ? "35vh" : "130vh",
+            display: "flex",
+            flexDirection: isMobile ? "row" : "column",
+            alignItems: "flex-start",
+            justifyContent: isMobile ? "space-between" : "space-between",
+        },
+    
+        content: {
+            width: isMobile ? "15vw" : "90vw",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-between"
+        },
+    
+        logo: {
+            height: isMobile ? "7.5vh" : "12vh",
+            alignSelf: isMobile ? "flex-start" : "center",
+            margin: isMobile ? "0 0 2vw 0" : "0 0 5vh 0"
+        },
+    
+        title: {
+            width: isMobile ? "15vw" : "80vw",
+            margin: isMobile ? "0 0 2vw 0" : "0 0 3vh 0",
+            textAlign: isMobile ? "left" : "center"
+        },
+    
+        description: {
+            width: isMobile ? "15vw" : "70vw",
+            fontWeight: 300,
+            margin: 0
+        },
+    
+        textIcon: {
+            height: "1.5vh"
+        },
+    
+        iconRow: {
+            width: isMobile ? "6vw" : "20svw",
+            display: "flex",
+            justifyContent: "space-between",
+            alignSelf: isMobile ? "flex-start" : "center",
+            margin: "0 0 2vw 0"
+        },
+    
+        icon: {
+            height: "2vh"
+        },
+    
+        map: {
+            width: isMobile ? "100%" : "70%"
+        }
+    }
+
     return (
         <div style={styles.main}>
 
@@ -64,70 +137,4 @@ export const Footer = () => {
 
         </div>
     );
-}
-
-const styles = {
-    main: {
-        backgroundColor: "#000000",
-        color: "#ffffff",
-        width: "100vw",
-        height: "70vh",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "center"
-    },
-
-    box: {
-        width: "70vw",
-        height: "35vh",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "space-between",
-    },
-
-    content: {
-        width: "15vw",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center"
-    },
-
-    logo: {
-        height: "7.5vh",
-        alignSelf: "flex-start",
-        margin: "0 0 2vw 0"
-    },
-
-    title: {
-        width: "15vw",
-        margin: "0 0 2vw 0"
-    },
-
-    description: {
-        width: "15vw",
-        fontWeight: 300,
-        margin: 0
-    },
-
-    textIcon: {
-        height: "1.5vh"
-    },
-
-    iconRow: {
-        width: "6vw",
-        display: "flex",
-        justifyContent: "space-between",
-        alignSelf: "flex-start",
-        margin: "0 0 2vw 0"
-    },
-
-    icon: {
-        height: "2vh"
-    },
-
-    map: {
-        width: "100%"
-    }
 }

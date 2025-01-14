@@ -1,0 +1,35 @@
+{
+    "first": [
+        {
+            "icon": "/1.png",
+            "text": "Solução completa para recuperação de empresas"
+        },
+        {
+            "icon": "/2.png",
+            "text": "Equipe multidisciplinar"
+        },
+        {
+            "icon": "/3.png",
+            "text": "Especialistas em negociações complexas"
+        },
+        {
+            "icon": "/4.png",
+            "text": "Elaboramos plano de recuperação financeira"
+        }
+    ],
+
+    "second": [
+        {
+            "icon": "/5.png",
+            "text": "Modelo de Suficiência Recuperacional"
+        },
+        {
+            "icon": "/6.png",
+            "text": "Tutela cautelar antecedente"
+        },
+        {
+            "icon": "/7.png",
+            "text": "Agilidade e acompanhamento integral"
+        }
+    ]
+}

@@ -1,7 +1,10 @@
-import { Button, useMediaQuery } from "@mui/material";
+import { Button } from "@mui/material";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import data from "./data.json";
 
-export const Cards = () => {
+export const CardsMobile = () => {
 
     const styles = {
         main: {
@@ -13,7 +16,7 @@ export const Cards = () => {
             flexDirection: "column",
             alignItems: "center"
         },
-    
+
         box: {
             width: "60vw",
             height: "80vh",
@@ -22,60 +25,55 @@ export const Cards = () => {
             alignItems: "center",
             justifyContent: "center",
         },
-    
+
         title: {
-            width: "60vw",
+            width: "85vw",
             fontWeight: 800
         },
-    
+
         description: {
+            width: "85vw",
             fontWeight: 300
         },
-    
-        topRow: {
-            width: "60vw",
+
+        carouselRow: {
+            width: "55vw",
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-between",
             marginBottom: "1.5vw",
             boxSizing: "border-box",
-            padding: "auto"
+            alignItems: "center",
+            justifyContent: "center"
         },
-    
-        bottomRow: {
-            width: "44.7vw",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            marginBottom: "1.5vw",
-            boxSizing: "border-box",
-            padding: "auto"
-        },
-    
-        card: {
+
+        carousel: {
             backgroundColor: "rgb(191, 153, 111, 0.5)",
-            width: "14vw",
-            height: "20vh",
+            width: "55vw",
+            height: "25vh",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
+            borderRadius: 5,
             alignItems: "center",
             justifyContent: "center",
-            textAlign: "center",
-            boxSizing: "border-box",
-            padding: "1vw 0.5vw 0 0.5vw",
-            borderRadius: 5
+            margin: "3vw 0 3vw 0"
         },
-    
+
         cardIcon: {
-            width: "5vw"
+            width: "8vw",
+            margin: "5vw auto 5vw auto"
         },
-    
+
+        cardDescription: {
+            textAlign: "center"
+        },
+
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: "35vw",
+            width: "55vw",
             height: "5vh",
             marginBottom: "2vw",
+            padding: 0,
             borderRadius: 5
         }
     }
@@ -91,35 +89,25 @@ export const Cards = () => {
                     (que não entram na Recuperação Judicial), seja para empresas de pequeno, médio ou grande porte.
                 </h3>
 
-                <div style={styles.topRow}>
-                    {data.first.map((item) => {
+                <div style={styles.carouselRow}>
+                    <Slider style={styles.carousel} settings={{
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }}>
+                        {data.first.map((item) => {
 
-                        return (
-                            <div style={styles.card}>
-                                <img style={styles.cardIcon} src={item.icon} />
-                                <h4 style={styles.cardDescription}>
-                                    {item.text}
-                                </h4>
-                            </div>
-                        )
+                            return (
+                                <div style={{display: "flex",width: "100%"}}>
+                                    <img style={styles.cardIcon} src={item.icon} />
+                                    <h3 style={styles.cardDescription}>{item.text}</h3>
+                                </div>
+                            )
 
-                    })}
-                </div>
-                <div style={styles.bottomRow}>
-
-                    {data.second.map((item) => {
-
-                        return (
-                            <div style={styles.card}>
-                                <img style={styles.cardIcon} src={item.icon} />
-                                <h4 style={styles.cardDescription}>
-                                    {item.text}
-                                </h4>
-                            </div>
-                        )
-
-                    })}
-
+                        })}
+                    </Slider>
                 </div>
 
                 <Button variant="container" style={styles.button}>

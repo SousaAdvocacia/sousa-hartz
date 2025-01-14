@@ -1,28 +1,32 @@
+import { useMediaQuery } from "@mui/material";
 import data from "./data.json"
 
 export const Rights = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
             backgroundColor: "#ffffff",
             width: "100vw",
-            height: "65vh",
+            height: "160vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
         },
 
         box: {
-            width: "70%",
+            width: isMobile ? "70%" : "80%",
             height: "auto",
             display: "flex",
+            flexDirection: isMobile ? "row" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
             marginBottom: "2.5vh"
         },
 
         textBox: {
-            width: "90%",
+            width: isMobile ? "90%" : "100%",
             height: "80%",
             display: "flex",
             flexDirection: "row",
@@ -32,7 +36,7 @@ export const Rights = () => {
         },
 
         title: {
-            width: "90%",
+            width: isMobile ? "90%" : "100%",
             margin: 0
         },
 
@@ -43,7 +47,7 @@ export const Rights = () => {
         },
 
         text: {
-            width: "50%",
+            width: isMobile ? "50%" : "100%",
             display: "flex",
             flexDirection: "column"
         },
@@ -54,9 +58,10 @@ export const Rights = () => {
         },
 
         imageBox: {
-            width: "40%",
+            width: isMobile ? "40%" : "80%",
             height: "100%",
             display: "flex",
+            margin: isMobile ? 0 : "5vh 0 5vh 0", 
             alignItems: "center"
         },
 

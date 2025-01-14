@@ -1,16 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import dataDesktop from "./dataDesktop.json";
-import dataMobile from "./dataMobile.json"
-import { useMediaQuery } from "@mui/material";
+import data from "./data.json";
 
-export const Partners = () => {
-
-    const isMobile = useMediaQuery('(min-width:1000px)');
-
-    const data = isMobile ? dataDesktop : dataMobile;
-
+export const PartnersMobile = () => {
     const styles = {
         main: {
             backgroundColor: "#bf996f",
@@ -42,15 +35,15 @@ export const Partners = () => {
 
         carouselCard: {
             backgroundColor: "#ffffff",
-            width: isMobile ? "14vw" : "50vw",
-            height: isMobile ? "10vw" : "30vw",
+            width: "14vw",
+            height: "10vw",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         },
 
         carouselImage: {
-            width: isMobile ? "7.5vw" : "27.5vw"
+            width: "7.5vw"
         }
     }
 

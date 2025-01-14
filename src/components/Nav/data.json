@@ -5,7 +5,7 @@
     },
     {
         "name": "Sobre",
-        "slug": "/sobre"
+        "slug": "/#sobre"
     },
     {
         "name": "Atuação",
@@ -13,11 +13,11 @@
     },
     {
         "name": "Institucional",
-        "slug": "/institucional"
+        "slug": "/#institucional"
     },
     {
         "name": "Blog",
-        "slug": "/blog"
+        "slug": "/#blog"
     },
     {
         "name": "Contato",

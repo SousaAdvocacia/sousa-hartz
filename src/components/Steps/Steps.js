@@ -1,17 +1,105 @@
-import { Button } from "@mui/material";
+import { Button, useMediaQuery } from "@mui/material";
 import data from "./data.json";
 
 export const Steps = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
+    const styles = {
+        main: {
+            backgroundColor: "#ffffff",
+            color: "#000000",
+            width: "100vw",
+            height: isMobile ? "90vh" : "160vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center"
+        },
+    
+        box: {
+            width: "60vw",
+            height: "90vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+        },
+    
+        title: {
+            width: "60vw",
+            fontWeight: 800
+        },
+    
+        description: {
+            fontWeight: 300,
+            alignSelf: "start"
+        },
+    
+        stepsRow: {
+            backgroundColor: "#efefef",
+            width: isMobile ? "60vw" : "80vw",
+            height: isMobile ? "50vh" : "160vh",
+            display: "flex",
+            flexDirection: isMobile ? "row" : "column",
+            justifyContent: "space-between"
+        },
+    
+        step: {
+            width: "12vw",
+            height: isMobile ? "60vh" : "30vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "flex-start",
+            textAlign: "center",
+            margin: "0 auto auto auto",
+            boxSizing: "border-box",
+            padding: isMobile ? "2.5vh" : 0
+        },
+
+        stepNumber: {
+            margin: isMobile ? "" : "1vh"
+        },
+    
+        stepTitle: {
+            width: isMobile ? "12vw" : "60vw",
+            margin : isMobile ? "" : "1vh"
+        },
+    
+        line: {
+            backgroundColor: "#000000",
+            width: isMobile ? "10vw" : "60vw",
+            height: "0.1vh"
+        },
+    
+        stepDescription: {
+            width: isMobile ? "12vw" : "75vw",
+            fontWeight: 300
+        },
+    
+        button: {
+            backgroundColor: "#bf996f",
+            color: "#ffffff",
+            width: isMobile ? "35vw" : "80vw",
+            height: isMobile ? "5vh" : "5vh",
+            marginTop: "1.5vw",
+            padding: 0,
+            borderRadius: 5
+        }
+    }
+
     return (
         <div style={styles.main}>
 
             <div style={styles.box}>
 
-                <h2 style={styles.title}>• DIFERENCIAIS</h2>
+                <h2 style={styles.title}>• PROCESSO E METODOLOGIA</h2>
 
                 <h3 style={styles.description}>
-                    Nosso escritório se destaca por apresentar soluções completas para dívidas concursais (Recuperação Judicial) e extraconcursais
-                    (que não entram na Recuperação Judicial), seja para empresas de pequeno, médio ou grande porte.
+                    É possível prevenir a falência com organização e planejamento.
+                    <br/>
+                    Confira quatro ações importantes para não fechar as portas da empresa.
                 </h3>
 
                 <div style={styles.stepsRow}>
@@ -20,7 +108,7 @@ export const Steps = () => {
                         return (
                             <div style={styles.step}>
 
-                                <h1>{item.number}</h1>
+                                <h1 style={styles.stepNumber}>{item.number}</h1>
 
                                 <div style={styles.line} />
 
@@ -48,80 +136,4 @@ export const Steps = () => {
 
         </div>
     );
-}
-
-const styles = {
-    main: {
-        backgroundColor: "#ffffff",
-        color: "#000000",
-        width: "100vw",
-        height: "90vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center"
-    },
-
-    box: {
-        width: "60vw",
-        height: "90vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-
-    title: {
-        width: "60vw",
-        fontWeight: 800
-    },
-
-    description: {
-        fontWeight: 300
-    },
-
-    stepsRow: {
-        backgroundColor: "#efefef",
-        width: "60vw",
-        height: "50vh",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between"
-    },
-
-    step: {
-        width: "12vw",
-        height: "60vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "flex-start",
-        textAlign: "center",
-        margin: "0 auto auto auto",
-        boxSizing: "border-box",
-        padding: "2.5vh"
-    },
-
-    stepTitle: {
-        width: "12vw"
-    },
-
-    line: {
-        backgroundColor: "#000000",
-        width: "10vw",
-        height: "0.1vh"
-    },
-
-    stepDescription: {
-        width: "12vw",
-        fontWeight: 300
-    },
-
-    button: {
-        backgroundColor: "#bf996f",
-        color: "#ffffff",
-        width: "35vw",
-        height: "5vh",
-        marginTop: "1.5vw",
-        borderRadius: 5
-    }
 }

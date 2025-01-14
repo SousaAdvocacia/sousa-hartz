@@ -1,12 +1,15 @@
 import { Button, useMediaQuery } from "@mui/material";
 import data from "./data.json";
 
-export const Activity = () => {
+export const Areas = () => {
+
+    const isMobile = useMediaQuery('(min-width:1000px)');
+
     const styles = {
         main: {
             backgroundColor: "#efefef",
             width: "100vw",
-            height: "100vh",
+            height: isMobile ? "100vh" : "190vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -14,15 +17,16 @@ export const Activity = () => {
 
         box: {
             backgroundColor: "#ffffff",
-            width: "70vw",
-            height: "95vh",
-            borderRadius: 15,
-            display: "flex"
+            width: isMobile ? "70vw" : "100vw",
+            height: isMobile ? "95vh" : "190vh",
+            borderRadius: isMobile ? 15 : 0,
+            display: "flex",
+            flexDirection: isMobile ? "row" : "column"
         },
 
         section: {
-            width: "35%",
-            height: "95vh",
+            width: isMobile ? "35%" : "100%",
+            height: "80vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -30,35 +34,36 @@ export const Activity = () => {
         },
 
         subtitle: {
-            width: "13vw",
+            width: isMobile ? "13vw" : "80vw",
             fontWeight: 500
         },
 
         title: {
-            width: "13vw",
+            width: isMobile ? "13vw" : "80vw",
             margin: 0
         },
 
         description: {
-            width: "13vw",
+            width: isMobile ? "13vw" : "80vw",
             fontWeight: 300
         },
 
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: "13vw",
+            width: isMobile ? "13vw" : "80vw",
             height: "4.5vh",
             marginTop: "3vw",
+            padding: 0,
             borderRadius: 5
         },
 
         colorSection: {
             backgroundColor: "#bf996f",
-            width: "65%",
-            height: "95vh",
-            borderTopRightRadius: 15,
-            borderBottomRightRadius: 15,
+            width: isMobile ? "65%" : "100%",
+            height: isMobile ? "95vh" : "200vh",
+            borderTopRightRadius: isMobile ? 15 : 0,
+            borderBottomRightRadius: isMobile ? 15 : 0,
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -69,13 +74,13 @@ export const Activity = () => {
             width: "85%",
             height: "auto",
             display: "flex",
-            flexDirection: "row",
+            flexDirection: isMobile ? "row" : "column",
             flexWrap: "wrap",
             justifyContent: "center"
         },
 
         textBox: {
-            width: "50%",
+            width: isMobile ? "50%" : "100%",
             height: "auto",
             display: "flex",
             flexDirection: "column",
@@ -90,8 +95,8 @@ export const Activity = () => {
 
         icon: {
             backgroundColor: "#ffffff",
-            width: "2vw",
-            height: "2vw",
+            width: isMobile ? "2vw" : "6vw",
+            height: isMobile ? "2vw" : "6vw",
             borderRadius: 10,
             display: "flex",
             alignItems: "center",
@@ -100,7 +105,7 @@ export const Activity = () => {
         },
 
         iconImage: {
-            width: "1.5vw"
+            width: isMobile ? "1.5vw" : "5vw"
         },
 
         boxTitle: {
@@ -117,9 +122,11 @@ export const Activity = () => {
         boxButton: {
             backgroundColor: "#ffffff",
             color: "#000000",
-            width: "10vw",
-            height: "4.5vh",
+            width: isMobile ? "10vw" : "40vw",
+            height: isMobile ? "4.5vh" : "4vh",
+            fontSize: isMobile ? "" : "12px",
             borderRadius: 5,
+            padding: 0,
             alignSelf: "left",
             marginTop: "0.25vw"
         }

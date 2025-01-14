@@ -15,27 +15,28 @@ export const RecoveryHeadline = () => {
             backgroundRepeat: 'no-repeat',
             color: "#ffffff",
             width: "100vw",
-            height: "75vh",
+            height: isMobile ? "75vh" : "120vh",
             display: "flex",
-            flexDirection: "row"
+            flexDirection: isMobile ? "row" : "column-reverse"
         },
     
         box: {
             backgroundColor: "rgba(0, 0, 0, 0.5)",
-            width: "50vw",
+            width: isMobile ? "50vw" : "100vw",
             height: "75vh",
             display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-end",
+            flexDirection: isMobile ? "row" : "column-reverse",
+            alignItems: isMobile ? "flex-end" : "center",
             justifyContent: "center",
             boxSizing: "border-box"
         },
     
         textBox: {
-            width: "25vw",
+            width: isMobile  ? "25vw" : "80vw",
             display: "flex",
             flexDirection: "column",
-            marginLeft: "5vw"
+            margin: isMobile ? "0 0 4vw 5vw" : 0,
+            textAlign: isMobile ? "left" : "center"
         },
     
         title: {
@@ -51,16 +52,18 @@ export const RecoveryHeadline = () => {
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: "17.5vw",
+            width: isMobile ? "17.5vw" : "50vw",
             height: "4.5vh",
             marginBottom: "2vw",
+            padding: 0,
             borderRadius: 5,
+            alignSelf: isMobile ? "start" : "center",
             filter: "drop-shadow(3px 3px 3px #000000)"
         },
     
         profile: {
-            height: isMobile ? "55vh" : "20vh",
-            marginRight: "5vw",
+            height: isMobile ? "55vh" : "40vh",
+            margin: isMobile ? "5vw" : "auto 0 0 0"
         }
     }
 

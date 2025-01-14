@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { boxSizing, useMediaQuery } from "@mui/system"
+import { boxSizing, textAlign, useMediaQuery } from "@mui/system"
 import { useState } from "react";
 import ReactPlayer from "react-player";
 
@@ -28,18 +28,19 @@ export const InsuranceHeadline = () => {
 
         box: {
             display: "flex",
-            flexDirection: "row",
+            flexDirection: isMobile ? "row" : "column-reverse",
             width: "100vw",
-            height: "70vh"
+            height: "100vh"
         },
 
         textBox: {
-            width: "30vw",
+            width: isMobile ? "30vw" : "80vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: "start",
+            alignItems: isMobile ? "start" : "center",
             justifyContent: "center",
-            margin: "0 auto 0 auto"
+            textAlign: isMobile ? "left" : "center",
+            margin: isMobile ? "0 auto 0 auto" : "3vh auto 0 auto"
         },
 
         title: {
@@ -55,7 +56,7 @@ export const InsuranceHeadline = () => {
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: "17.5vw",
+            width: isMobile ? "17.5vw" : "50vw",
             height: "4.5vh",
             marginTop: "1vw",
             borderRadius: 5
@@ -64,7 +65,7 @@ export const InsuranceHeadline = () => {
         imageBox: {
             backgroundColor: "#bf996f",
             height: "100%",
-            width: "40%",
+            width: isMobile ? "40%" : "100%",
             display: "flex",
             alignItems: "end",
             justifyContent: "center"
@@ -87,7 +88,7 @@ export const InsuranceHeadline = () => {
         },
 
         video: {
-            width: isMobile ? "55vw" : "80vw"
+            width: isMobile ? "55vw" : "90vw"
         }
     }
 
