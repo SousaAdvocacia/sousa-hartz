@@ -55,7 +55,7 @@ export const HomeAbout = () => {
 
                 <div style={styles.textBox}>
 
-                    <h1 style={styles.title}>Quem é Jonathan Hartz de Sousa</h1>
+                    <h1 style={styles.title}>Quem é Jonathan Sousa</h1>
 
                     <h2 style={styles.description}>
 

@@ -102,7 +102,7 @@ export const RecoveryInfo = () => {
                         <h2 style={styles.title}>• SOUZA HARTZ ADVOCACIA</h2>
 
                         <h3 style={styles.description}>
-                            <strong>Quem é Jonathan Hartz de Sousa</strong>
+                            <strong>Quem é Jonathan Sousa</strong>
                             <br />
                             Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes
                             (UCAM), Pós graduando em Direito do Consumidor, Membro da comissão de direito do consumidor da 30ª subseção da OAB/RJ– Santa Cruz,

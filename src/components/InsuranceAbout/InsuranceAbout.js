@@ -9,7 +9,7 @@ export const InsuranceAbout = () => {
             backgroundColor: "#bf996f",
             color: "#ffffff",
             width: "100vw",
-            height: "auto", 
+            height: "auto",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -64,18 +64,27 @@ export const InsuranceAbout = () => {
                     <h1 style={styles.title}>Jonathan Sousa Hartz</h1>
                     <h2 style={styles.subtitle}>OAB/RJ RJ123456</h2>
                     <h3 style={styles.description}>
-                        Formado em Direito pela UFSM, em 2000, Marcos Rutzen é especialista nas áreas cível, bancária, tributária, empresarial e imobiliária.
-                        Natural de Três de Maio, o advogado é também empresário da área de vinhos, uma paixão que virou negócio. Músico amador e entusiasta
-                        musical, já empreendeu no setor, mas mantém hoje a música como hobby.
+                        Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes
+                        (UCAM), Pós graduando em Direito do Consumidor, Membro da comissão de direito do consumidor da 30ª subseção da OAB/RJ– Santa Cruz,
+                        atuante na área do direito bancário desde o ano de 2015.
                         <br />
+                        Iniciei minha trajetória no direito em 2013 quando ingressei na universidade, posteriormente tive a oportunidade de estagiar e
+                        trabalhar como advogado em grandes escritórios renomados do Rio de Janeiro, atuando no direito bancário em favor de grandes
+                        instituições financeiras.
                         <br />
-                        Atuando nas áreas consultiva e contenciosa, o objetivo do escritório é atender aos clientes com excelência, através de especialistas e
-                        associados que compõem a equipe.
+                        Hoje minha missão é atuar em prol dos consumidores, defendendo seus interesses e buscando justiça, lutando para buscar transparência e
+                        juros corretos em seus contratos com as instituições financeiras.
+                        <br />
+                        Eu optei em atuar em defesa dos consumidores ante as arbitrariedades e abusividades nas realações de consumo, onde  o consumidor
+                        sempre é prejudicado por ser a parte mais vulnerável na relação.
+                        <br />
+                        Nosso compromisso é priorizar o consumidor e através de nossa atuação combativa e humanizada, assegurar a garantia dos direitos de
+                        nossos clientes.
                     </h3>
 
                 </div>
 
-                <img style={styles.image} src="/profile-about.png"/>
+                <img style={styles.image} src="/profile-about.png" />
 
             </div>
 
