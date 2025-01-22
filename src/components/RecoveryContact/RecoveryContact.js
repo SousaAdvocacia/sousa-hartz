@@ -111,7 +111,7 @@ export const RecoveryContact = () => {
                 <h3 style={styles.description}>
                     (01) 2345-6789
                     <br/>
-                    Sousa Hartz
+                    Jonathan Sousa
                     <br/>
                     Rua X 1234, Bairro X
                     <br/>

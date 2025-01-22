@@ -59,7 +59,7 @@ export const Title = () => {
 
                 <div style={styles.textBox}>
 
-                    <h1 style={styles.title}>Sousa Hartz Advocacia</h1>
+                    <h1 style={styles.title}>Jonathan Souza Advocacia</h1>
 
                     <h2 style={styles.description}>
                         Atuação consultiva e contenciosa em Direito Empresarial, Tributário, Bancário, Cível e áreas afins. Especialidade em Recuperação Judicial,

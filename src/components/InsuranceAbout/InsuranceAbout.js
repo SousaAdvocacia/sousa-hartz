@@ -60,8 +60,8 @@ export const InsuranceAbout = () => {
 
                 <div style={styles.textBox}>
 
-                    <h3 style={styles.subtitle}>Quem é o Jonathan Sousa Hartz</h3>
-                    <h1 style={styles.title}>Jonathan Sousa Hartz</h1>
+                    <h3 style={styles.subtitle}>Quem é o Jonathan Sousa</h3>
+                    <h1 style={styles.title}>Jonathan Sousa</h1>
                     <h2 style={styles.subtitle}>OAB/RJ RJ123456</h2>
                     <h3 style={styles.description}>
                         Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes
