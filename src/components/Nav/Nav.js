@@ -27,7 +27,7 @@ export const Nav = () => {
         },
 
         navbarBox: {
-            width: "50vw",
+            width: "50%",
             height: "10vh",
             display: "flex",
             alignItems: "center",
@@ -39,14 +39,15 @@ export const Nav = () => {
         },
 
         menu: {
-            width: "35vw",
+            width: "auto",
             display: "flex",
             justifyContent: "space-between"
         },
 
         menuItem: {
             color: "#ffffff",
-            textDecoration: "none"
+            textDecoration: "none",
+            margin: "0 1vw 0 1vw"
         }
     }
 
