@@ -1,5 +1,9 @@
 [
     {
+        "name": "Contatar via WhatsApp",
+        "slug": "https://wa.me/5521998703035"
+    },
+    {
         "name": "Home",
         "slug": "/"
     },
@@ -9,7 +13,7 @@
     },
     {
         "name": "Atuação",
-        "slug": "/atuacao"
+        "slug": "/#atuacao"
     },
     {
         "name": "Institucional",

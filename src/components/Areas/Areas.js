@@ -140,7 +140,7 @@ export const Areas = () => {
     }
 
     return (
-        <div style={styles.main}>
+        <div id="atuacao" style={styles.main}>
             <div style={styles.box}>
 
                 <div style={styles.section}>

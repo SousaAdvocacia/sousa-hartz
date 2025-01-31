@@ -116,8 +116,6 @@ export const Footer = () => {
                         Sobre<br /><br />
                         Atuação<br /><br />
                         Institucional<br /><br />
-                        Blog<br /><br />
-                        Contato
                     </h3>
 
                 </div>

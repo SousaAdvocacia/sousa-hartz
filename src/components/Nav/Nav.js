@@ -3,8 +3,6 @@ import { useState } from "react";
 import data from "./data.json";
 
 export const Nav = () => {
-    const pages = ['Home', 'Sobre', 'Atuação', 'Institucional', "Blog", "Contato"];
-
     const isMobile = useMediaQuery('(min-width:1000px)');
 
     const [color, setColor] = useState(true)
@@ -41,7 +39,7 @@ export const Nav = () => {
         },
 
         menu: {
-            width: "27.5vw",
+            width: "35vw",
             display: "flex",
             justifyContent: "space-between"
         },
