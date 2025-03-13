@@ -108,9 +108,9 @@ export const InsuranceHeadline = () => {
 
                     <h2 style={styles.description}>
 
-                    Empresário gaúcho, você teve a sua empresa atingida pela maior tragédia natural do Rio Grande do Sul? Seja parcialmente ou totalmente, 
-                    sua empresa pode ter direito a receber uma indenização. Se você estiver com problemas para acionar o seguro ou não souber se tem direito 
-                    à recuperar seus bens, nós podemos ajudar você.
+                    Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes 
+                    (UCAM), Pós graduando em Direito do Consumidor, Membro da comissão de direito do consumidor da 30ª subseção da OAB/RJ– Santa Cruz, 
+                    atuante na área do direito bancário desde o ano de 2015.
 
                     </h2>
 

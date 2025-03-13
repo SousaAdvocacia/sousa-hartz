@@ -29,7 +29,8 @@ export const Footer = () => {
             width: isMobile ? "15vw" : "90vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            alignItems: isMobile ? "flex-start":"center",
+            textAlign: isMobile ? "left":"center",
             justifyContent: "space-between"
         },
     
@@ -49,6 +50,11 @@ export const Footer = () => {
             width: isMobile ? "15vw" : "70vw",
             fontWeight: 300,
             margin: 0
+        },
+
+        descriptionText: {
+            textDecoration: 'none',
+            color: '#ffffff'
         },
     
         textIcon: {
@@ -112,10 +118,13 @@ export const Footer = () => {
                     </h3>
 
                     <h3 style={styles.description}>
-                        Home<br /><br />
-                        Sobre<br /><br />
-                        Atuação<br /><br />
-                        Institucional<br /><br />
+                        <a style={styles.descriptionText}href="/">Home</a>
+                        <br /><br />
+                        <a style={styles.descriptionText}href="/#sobre">Sobre</a>
+                        <br /><br />
+                        <a style={styles.descriptionText}href="/#atuacao">Atuação</a>
+                        <br /><br />
+                        <a style={styles.descriptionText}href="/#institucional">Institucional</a>
                     </h3>
 
                 </div>
