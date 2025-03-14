@@ -116,15 +116,11 @@ export const ContactOld = () => {
                     <h1 style={styles.title}>Deixe suas dúvidas através de nosso formulário.</h1>
 
                     <h3 style={styles.description}>
-                        Av. Ipiranga 7464 / 821, Jardim Botânico, Porto Alegre, RS - CEP: 91530-000
+                        Ayrton Senna 2500 Office 3 Sala 227/228 
                         <br />
-                        (51) 98117-8431
+                        (21) 99900-3367
                         <br />
-                        (51) 98117-8431
-                        <br />
-                        marcos@rutzenadvogados.com.br
-                        <br />
-                        marcos@rutzen.adv.br
+                        advocacia@sousahartz.com.br
                     </h3>
 
                 </div>

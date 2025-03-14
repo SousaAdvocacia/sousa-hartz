@@ -93,24 +93,28 @@ export const RecoveryInfo = () => {
             <div style={styles.box}>
                 <div style={styles.boxContent}>
 
-                        <img style={styles.image} src="/placeholder1.jpg" />
+                    <img style={styles.image} src="/placeholder1.jpg" />
                 </div>
 
                 <div style={styles.boxContent}>
                     <div style={styles.textBox}>
 
-                        <h2 style={styles.title}>• SOUZA HARTZ ADVOCACIA</h2>
+                        <h2 style={styles.title}>• LACERDA NETO ADVOCACIA</h2>
 
                         <h3 style={styles.description}>
-                            <strong>Quem é Jonathan Sousa</strong>
+                            <strong>QUEM É DR. NILTON LACERDA</strong>
                             <br />
-                            Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes
-                            (UCAM), Pós graduando em Direito do Consumidor, Membro da comissão de direito do consumidor da 30ª subseção da OAB/RJ– Santa Cruz,
-                            atuante na área do direito bancário desde o ano de 2015.
+                            O escritório de advocacia liderado pelo Dr. Nilton de Lacerda Neto, com o respaldo e a vasta experiência de seu pai, Dr. Nilton de Lacerda Filho,
+                            advogado com mais de 36 anos de atuação e reconhecida reputação na comunidade jurídica.
                             <br />
                             <br />
-                            Hoje minha missão é atuar em prol dos consumidores, defendendo seus interesses e buscando justiça, lutando para buscar transparência
-                            e juros corretos em seus contratos com as instituições financeiras.
+                            Fundado pelo Dr. Nilton de Lacerda Filho, o escritório consolidou-se ao longo das décadas como referência em serviços jurídicos de alta
+                            qualidade. Com a chegada da segunda geração, o Dr. Nilton de Lacerda Neto agrega uma visão inovadora e estratégica, unindo seu conhecimento e
+                            habilidades à expertise do pai para oferecer soluções jurídicas eficientes e personalizadas.
+                            <br />
+                            <br />
+                            Com uma equipe altamente qualificada, o escritório atua em diversas áreas do direito, garantindo que cada caso seja conduzido com
+                            comprometimento, ética e excelência, sempre em busca dos melhores resultados para seus clientes.
                         </h3>
 
                         <Button variant="container" style={styles.button}>
@@ -121,20 +125,6 @@ export const RecoveryInfo = () => {
                     </div>
 
 
-                </div>
-            </div>
-
-            <div style={styles.videoBox}>
-                <div style={styles.video}>
-                    <ReactPlayer
-                        width="100%"
-                        height="100%"
-                        playing={true}
-                        muted={muted}
-                        url="/intro-video.mp4"
-                        position="absolute"
-                        onClick={() => { (handleToggleMute()) }}
-                    />
                 </div>
             </div>
         </div>
