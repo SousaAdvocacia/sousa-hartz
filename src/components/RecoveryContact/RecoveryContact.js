@@ -109,13 +109,13 @@ export const RecoveryContact = () => {
                 </div>
 
                 <h3 style={styles.description}>
-                    (01) 2345-6789
+                    (21) 99900-3367
                     <br/>
                     Jonathan Sousa
                     <br/>
-                    Rua X 1234, Bairro X
+                    Avenida Ayrton Senna 2500 
                     <br/>
-                    Rio de Janeiro, RJ - CEP: 12345-678
+                    Office 3, Sala 227/228
                 </h3>
             </div>
 

@@ -102,7 +102,7 @@ export const Footer = () => {
 
                     <h3 style={styles.description}>
 
-                        <span><img style={styles.textIcon} src="/email.png" /> sousahartz@gmail.com </span>
+                        <span><img style={styles.textIcon} src="/email.png" /> advocacia@sousahartz.com.br </span>
                         <br />
                         <span><img style={styles.textIcon} src="/phone.png" /> (21) 99900-3367 </span>
                         <br />
