@@ -3,7 +3,7 @@ import data from "./data.json"
 
 export const Values = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -16,24 +16,24 @@ export const Values = () => {
         },
 
         box: {
-            width: isMobile ? "60%" : "100%",
+            width: isDesktop ? "60%" : "100%",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "" : "column-reverse",
+            flexDirection: isDesktop ? "" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
-            marginBottom: isMobile ? "7.5vh" : "2.5vh"
+            marginBottom: isDesktop ? "7.5vh" : "2.5vh"
         },
 
         textBox: {
             width: "55%",
             height: "80%",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: isMobile ? 0 : "2.5vh"
+            marginTop: isDesktop ? 0 : "2.5vh"
         },
 
         title: {
@@ -43,30 +43,30 @@ export const Values = () => {
         subtitle: {
             width: "100%",
             fontWeight: 100,
-            margin: isMobile ? "0 0 2vh 0" : "0 0 5vh 0"
+            margin: isDesktop ? "0 0 2vh 0" : "0 0 5vh 0"
         },
 
         text: {
-            width: isMobile ? "50%" : "100%",
+            width: isDesktop ? "50%" : "100%",
             display: "flex",
             flexDirection: "column",
-            textAlign: isMobile ? "left" : "center"
+            textAlign: isDesktop ? "left" : "center"
         },
 
         description: {
-            width: isMobile ? "80%" : "100%",
+            width: isDesktop ? "80%" : "100%",
             fontWeight: 100
         },
 
         imageBox: {
-            width: isMobile ? "40%" : "100%",
-            height: isMobile ? "100%" : "30%"
+            width: isDesktop ? "40%" : "100%",
+            height: isDesktop ? "100%" : "30%"
         },
 
         image: {
             width: "100%",
-            height: isMobile ? "" : "35vh",
-            objectFit: isMobile ? "" : "cover"
+            height: isDesktop ? "" : "35vh",
+            objectFit: isDesktop ? "" : "cover"
         }
     }
 

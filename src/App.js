@@ -4,12 +4,13 @@ import { useMediaQuery } from '@mui/material';
 import { Insurance } from './Pages/Insurance';
 import { Recovery } from './Pages/Recovery';
 import { Home } from './Pages/Home';
-import { Contact } from './Pages/Contact';
-import { Activity } from './Pages/Activity';
+import { Nav } from './components/Nav/Nav';
+import { Footer } from './components/Footer/Footer';
+import { NavMobile } from './components/NavMobile/NavMobile';
 
 function App() {
 
-  const isMobile = useMediaQuery('(min-width:1300px)');
+  const isDesktop = useMediaQuery('(min-width:1300px)');
 
   const styles = {
     main: {
@@ -24,7 +25,7 @@ function App() {
       justifyContent: "space-around",
       alignItems: "center",
       justifyContent: "center",
-      fontSize: isMobile ? "16px" : "14px",
+      fontSize: isDesktop ? "16px" : "14px",
       scrollBehavior: "smooth"
     }
   }
@@ -33,6 +34,8 @@ function App() {
 
     <div style={styles.main}>
 
+      {isDesktop ? <Nav/> : <NavMobile/>}
+
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -40,6 +43,8 @@ function App() {
         <Route path="/securitario" element={<Insurance />} />
 
       </Routes>
+
+      <Footer/>
 
     </div>
   );

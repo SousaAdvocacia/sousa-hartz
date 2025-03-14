@@ -3,7 +3,7 @@ import data from "./data.json"
 
 export const Work = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
     
     const styles = {
         main: {
@@ -18,60 +18,60 @@ export const Work = () => {
         topBox: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
             backgroundPosition: 'left',
-            backgroundSize: isMobile ? '45% 100%' : "100% 100%",
+            backgroundSize: isDesktop ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
             width: "100%",
-            height: isMobile ? "auto" : "110vh",
+            height: isDesktop ? "auto" : "110vh",
             marginBottom: "10vh",
             display: "flex",
             alignItems: "center",
-            justifyContent: isMobile ? "end" : "center"
+            justifyContent: isDesktop ? "end" : "center"
         },
 
         topCard: {
             backgroundColor: "#bf996f",
-            width: isMobile ? "62.5%" : "100%",
+            width: isDesktop ? "62.5%" : "100%",
             height: "auto",
             borderTopLeftRadius: 30,
             borderBottomLeftRadius: 30,
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "start" : "center",
+            alignItems: isDesktop ? "start" : "center",
             justifyContent: "center",
             boxSizing: "border-box",
             margin: "8vh 0 8vh 0",
-            padding: isMobile ? "5vh 0 5vh 5vw" : "0 5vw 0 5vw"
+            padding: isDesktop ? "5vh 0 5vh 5vw" : "0 5vw 0 5vw"
         },
 
         bottomBox: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
             backgroundPosition: 'right',
-            backgroundSize: isMobile ? '45% 100%' : "100% 100%",
+            backgroundSize: isDesktop ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
             width: "100%",
-            height: isMobile ? "auto" : "110vh",
+            height: isDesktop ? "auto" : "110vh",
             display: "flex",
             alignItems: "center",
-            justifyContent: isMobile ? "start" : "center"
+            justifyContent: isDesktop ? "start" : "center"
         },
 
         bottomCard: {
             backgroundColor: "#bf996f",
-            width: isMobile ? "62.5%" : "100%",
+            width: isDesktop ? "62.5%" : "100%",
             height: "auto",
             borderTopRightRadius: 30,
             borderBottomRightRadius: 30,
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "end" : "center",
+            alignItems: isDesktop ? "end" : "center",
             justifyContent: "center",
             boxSizing: "border-box",
             margin: "8vh 0 8vh 0",
-            padding: isMobile ? "5vh 5vw 5vh 0" : "0 5vw 0 5vw"
+            padding: isDesktop ? "5vh 5vw 5vh 0" : "0 5vw 0 5vw"
         },
 
         textBox: {
-            width: isMobile ? "70%" : "100%"
+            width: isDesktop ? "70%" : "100%"
         },
 
         title: {
@@ -87,19 +87,19 @@ export const Work = () => {
             width: "100%",
             height: "50%",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             justifyContent: "space-between"
         },
 
         textCard: {
-            width: isMobile ? "30%" : "100%",
+            width: isDesktop ? "30%" : "100%",
             height: "100%"
         },
 
         iconBox: {
             backgroundColor: "#ffffff",
-            width: isMobile ? "2vw" : "10vw",
-            height: isMobile ? "2vw" : "10vw",
+            width: isDesktop ? "2vw" : "10vw",
+            height: isDesktop ? "2vw" : "10vw",
             borderRadius: 5,
             marginBottom: "0.5vw",
             display: "flex",
@@ -108,7 +108,7 @@ export const Work = () => {
         },
 
         icon: {
-            width: isMobile ? "1vw" : "7vw"
+            width: isDesktop ? "1vw" : "7vw"
         }
     }
 

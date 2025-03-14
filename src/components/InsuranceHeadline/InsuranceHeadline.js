@@ -8,7 +8,7 @@ export const InsuranceHeadline = () => {
     const [muted, setMuted] = useState(true);
     const handleToggleMute = () => setMuted(current => !current);
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -28,19 +28,19 @@ export const InsuranceHeadline = () => {
 
         box: {
             display: "flex",
-            flexDirection: isMobile ? "row" : "column-reverse",
+            flexDirection: isDesktop ? "row" : "column-reverse",
             width: "100vw",
             height: "100vh"
         },
 
         textBox: {
-            width: isMobile ? "30vw" : "80vw",
+            width: isDesktop ? "30vw" : "80vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "start" : "center",
+            alignItems: isDesktop ? "start" : "center",
             justifyContent: "center",
-            textAlign: isMobile ? "left" : "center",
-            margin: isMobile ? "0 auto 0 auto" : "3vh auto 0 auto"
+            textAlign: isDesktop ? "left" : "center",
+            margin: isDesktop ? "0 auto 0 auto" : "3vh auto 0 auto"
         },
 
         title: {
@@ -56,9 +56,9 @@ export const InsuranceHeadline = () => {
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "17.5vw" : "50vw",
+            width: isDesktop ? "17.5vw" : "50vw",
             height: "auto",
-            marginTop: "1vw",
+            margin: isDesktop ? "1vw 0 0 0" : "1vw 0 8vw 0",
             padding: 0,
             borderRadius: 5
         },
@@ -70,7 +70,7 @@ export const InsuranceHeadline = () => {
         imageBox: {
             backgroundColor: "#bf996f",
             height: "100%",
-            width: isMobile ? "40%" : "100%",
+            width: isDesktop ? "40%" : "100%",
             display: "flex",
             alignItems: "end",
             justifyContent: "center"

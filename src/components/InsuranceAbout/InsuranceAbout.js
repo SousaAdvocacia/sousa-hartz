@@ -2,7 +2,7 @@ import { textAlign, useMediaQuery } from "@mui/system"
 
 export const InsuranceAbout = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -16,18 +16,18 @@ export const InsuranceAbout = () => {
         },
 
         box: {
-            width: isMobile ? "65%" : "100%",
+            width: isDesktop ? "65%" : "100%",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column-reverse",
+            flexDirection: isDesktop ? "row" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
-            margin: isMobile ? "5vh 0 5vh 0" : "5vh 0 8vh 0"
+            margin: isDesktop ? "5vh 0 5vh 0" : "5vh 0 8vh 0"
         },
 
         textBox: {
-            width: isMobile ? "65%" : "80%",
-            textAlign: isMobile ? "left" : "center"
+            width: isDesktop ? "65%" : "80%",
+            textAlign: isDesktop ? "left" : "center"
         },
 
         title: {
@@ -36,7 +36,7 @@ export const InsuranceAbout = () => {
 
         subtitle: {
             fontWeight: 100,
-            textAlign: isMobile ? "justify" : "center"
+            textAlign: isDesktop ? "justify" : "center"
         },
 
         description: {
@@ -46,10 +46,10 @@ export const InsuranceAbout = () => {
 
         image: {
             backgroundColor: "#000000",
-            width: isMobile ? "20vw" : "60vw",
-            height: isMobile ? "55vh" : "40vh",
+            width: isDesktop ? "20vw" : "60vw",
+            height: isDesktop ? "55vh" : "40vh",
             objectFit: "cover",
-            marginBottom: isMobile ? 0 : "2vh"
+            marginBottom: isDesktop ? 0 : "2vh"
         }
     }
 

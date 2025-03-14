@@ -3,7 +3,7 @@ import data from "./data.json"
 
 export const Rights = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -16,28 +16,28 @@ export const Rights = () => {
         },
 
         box: {
-            width: isMobile ? "70%" : "100%",
+            width: isDesktop ? "70%" : "100%",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column-reverse",
+            flexDirection: isDesktop ? "row" : "column-reverse",
             alignItems: "center",
             justifyContent: "space-between",
-            margin: isMobile ? "7.5vh 0 7.5vh 0" : "0 0 2.5vh 0"
+            margin: isDesktop ? "7.5vh 0 7.5vh 0" : "0 0 2.5vh 0"
         },
 
         textBox: {
-            width: isMobile ? "90%" : "80%",
+            width: isDesktop ? "90%" : "80%",
             height: "80%",
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "left",
-            marginTop: isMobile ? 0 : "2.5vh"
+            marginTop: isDesktop ? 0 : "2.5vh"
         },
 
         title: {
-            width: isMobile ? "90%" : "100%",
+            width: isDesktop ? "90%" : "100%",
             margin: 0
         },
 
@@ -48,7 +48,7 @@ export const Rights = () => {
         },
 
         text: {
-            width: isMobile ? "50%" : "100%",
+            width: isDesktop ? "50%" : "100%",
             display: "flex",
             flexDirection: "column"
         },
@@ -59,17 +59,17 @@ export const Rights = () => {
         },
 
         imageBox: {
-            width: isMobile ? "40%" : "100%",
+            width: isDesktop ? "40%" : "100%",
             height: "100%",
             display: "flex",
-            margin: isMobile ? 0 : "0 0 5vh 0", 
+            margin: isDesktop ? 0 : "0 0 5vh 0", 
             alignItems: "center"
         },
 
         image: {
             width: "100%",
-            height: isMobile ? "" : "35vh",
-            objectFit: isMobile ? "" : "cover"
+            height: isDesktop ? "" : "35vh",
+            objectFit: isDesktop ? "" : "cover"
         }
     }
 

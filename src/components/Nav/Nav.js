@@ -3,7 +3,7 @@ import { useState } from "react";
 import data from "./data.json";
 
 export const Nav = () => {
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const [color, setColor] = useState(true)
     const changeColor = () => {
@@ -19,7 +19,7 @@ export const Nav = () => {
     const styles = {
 
         nav: {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: color ? "rgba(0, 0, 0, 0.8)" : "#000000",
             width: "100vw",
             height: "10vh",
             display: "flex",
@@ -52,13 +52,7 @@ export const Nav = () => {
     }
 
     return (
-        <AppBar style={{
-            backgroundColor: color ? "rgba(0, 0, 0, 0.5)" : "#000000",
-            width: "100vw",
-            height: "10vh",
-            display: "flex",
-            flexDirection: "row"
-        }}>
+        <AppBar style={styles.nav}>
             <div style={styles.navbarBox}>
                 <img style={styles.logo} src="/logo.png" />
             </div>

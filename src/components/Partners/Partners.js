@@ -7,9 +7,9 @@ import { useMediaQuery } from "@mui/material";
 
 export const Partners = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
-    const data = isMobile ? dataDesktop : dataMobile;
+    const data = isDesktop ? dataDesktop : dataMobile;
 
     const styles = {
         main: {
@@ -42,15 +42,15 @@ export const Partners = () => {
 
         carouselCard: {
             backgroundColor: "#ffffff",
-            width: isMobile ? "14vw" : "50vw",
-            height: isMobile ? "10vw" : "30vw",
+            width: isDesktop ? "14vw" : "50vw",
+            height: isDesktop ? "10vw" : "30vw",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         },
 
         carouselImage: {
-            width: isMobile ? "7.5vw" : "27.5vw"
+            width: isDesktop ? "7.5vw" : "27.5vw"
         }
     }
 

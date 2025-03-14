@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mui/system"
 
 export const HomeAbout = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -16,35 +16,35 @@ export const HomeAbout = () => {
             width: "100vw",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column-reverse",
-            justifyContent: isMobile ? "" : "start",
+            flexDirection: isDesktop ? "row" : "column-reverse",
+            justifyContent: isDesktop ? "" : "start",
         },
 
         textBox: {
-            width: isMobile ? "45vw" : "90vw",
+            width: isDesktop ? "45vw" : "90vw",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            margin: isMobile ? "0 auto 0 auto" : "5vw auto 5vw auto",
-            padding: isMobile ? "5vh 0 5vh 0" : "2vh 0 2vh 0"
+            margin: isDesktop ? "0 auto 0 auto" : "5vw auto 5vw auto",
+            padding: isDesktop ? "5vh 0 5vh 0" : "2vh 0 2vh 0"
         },
 
         title: {
             width: "100%",
-            fontSize: isMobile ? "40px" : "24px",
+            fontSize: isDesktop ? "40px" : "24px",
             fontWeight: 700,
             margin: 0
         },
 
         description: {
-            fontSize: isMobile ? "" : "18px",
+            fontSize: isDesktop ? "" : "18px",
             fontWeight: 100
         },
 
         image: {
-            height: isMobile ? "100%" : "50vh",
-            width: isMobile ? "35%" : "100%",
+            height: isDesktop ? "100%" : "50vh",
+            width: isDesktop ? "35%" : "100%",
             objectFit: "cover"
         }
     }

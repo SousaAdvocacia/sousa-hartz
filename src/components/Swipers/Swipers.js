@@ -3,7 +3,7 @@ import data from "./data.json";
 
 export const Swipers = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -17,7 +17,7 @@ export const Swipers = () => {
         },
     
         box: {
-            width: isMobile ? "50vw" : "70vw",
+            width: isDesktop ? "50vw" : "70vw",
             height: "auto",
             display: "flex",
             flexDirection: "column",
@@ -36,7 +36,7 @@ export const Swipers = () => {
             width: "100%",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             flexWrap: "wrap",
             justifyContent: "space-between"
         },
@@ -44,7 +44,7 @@ export const Swipers = () => {
         card: {
             backgroundColor: "#ffffff",
             color: "#000000",
-            width: isMobile ? "49%" : "100%",
+            width: isDesktop ? "49%" : "100%",
             minHeight: "10vh",
             height: "auto",
             marginBottom: "2vh",
@@ -63,18 +63,18 @@ export const Swipers = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            margin: isMobile ? 0 : "0 auto 0 auto"
+            margin: isDesktop ? 0 : "0 auto 0 auto"
         },
     
         cardDescription: {
-            width: isMobile ? "15.5vw" : "55vw",
+            width: isDesktop ? "15.5vw" : "55vw",
             fontWeight: 300
         },
     
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "35vw" : "70vw",
+            width: isDesktop ? "35vw" : "70vw",
             height: "auto",
             padding: 0,
             borderRadius: 5

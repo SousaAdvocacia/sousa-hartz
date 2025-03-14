@@ -3,57 +3,57 @@ import data from "./data.json";
 
 export const Areas = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
-            backgroundColor: isMobile ? "#efefef" : "#ffffff",
+            backgroundColor: isDesktop ? "#efefef" : "#ffffff",
             width: "100vw",
-            height: isMobile ? "auto" : "auto",
+            height: isDesktop ? "auto" : "auto",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            padding: isMobile ? "8vh 0 8vh 0" : "4vh 0 0 0"
+            padding: isDesktop ? "8vh 0 8vh 0" : "4vh 0 0 0"
         },
 
         box: {
             backgroundColor: "#ffffff",
-            width: isMobile ? "70vw" : "100vw",
-            height: isMobile ? "auto" : "auto",
-            borderRadius: isMobile ? 15 : 0,
+            width: isDesktop ? "70vw" : "100vw",
+            height: isDesktop ? "auto" : "auto",
+            borderRadius: isDesktop ? 15 : 0,
             display: "flex",
-            flexDirection: isMobile ? "row" : "column"
+            flexDirection: isDesktop ? "row" : "column"
         },
 
         section: {
-            width: isMobile ? "35%" : "100%",
+            width: isDesktop ? "35%" : "100%",
             height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            marginBottom: isMobile ? 0 : "5vh"
+            marginBottom: isDesktop ? 0 : "5vh"
         },
 
         subtitle: {
-            width: isMobile ? "13vw" : "80vw",
+            width: isDesktop ? "13vw" : "80vw",
             fontWeight: 500
         },
 
         title: {
-            width: isMobile ? "13vw" : "80vw",
+            width: isDesktop ? "13vw" : "80vw",
             margin: 0
         },
 
         description: {
-            width: isMobile ? "13vw" : "80vw",
+            width: isDesktop ? "13vw" : "80vw",
             fontWeight: 300
         },
 
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "13vw" : "80vw",
+            width: isDesktop ? "13vw" : "80vw",
             height: "auto",
             marginTop: "3vw",
             padding: 0,
@@ -66,10 +66,10 @@ export const Areas = () => {
 
         colorSection: {
             backgroundColor: "#bf996f",
-            width: isMobile ? "65%" : "100%",
-            height: isMobile ? "auto" : "auto",
-            borderTopRightRadius: isMobile ? 15 : 0,
-            borderBottomRightRadius: isMobile ? 15 : 0,
+            width: isDesktop ? "65%" : "100%",
+            height: isDesktop ? "auto" : "auto",
+            borderTopRightRadius: isDesktop ? 15 : 0,
+            borderBottomRightRadius: isDesktop ? 15 : 0,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -81,13 +81,13 @@ export const Areas = () => {
             width: "85%",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             flexWrap: "wrap",
             justifyContent: "center"
         },
 
         textBox: {
-            width: isMobile ? "50%" : "100%",
+            width: isDesktop ? "50%" : "100%",
             height: "auto",
             display: "flex",
             flexDirection: "column",
@@ -102,8 +102,8 @@ export const Areas = () => {
 
         icon: {
             backgroundColor: "#ffffff",
-            width: isMobile ? "2vw" : "6vw",
-            height: isMobile ? "2vw" : "6vw",
+            width: isDesktop ? "2vw" : "6vw",
+            height: isDesktop ? "2vw" : "6vw",
             borderRadius: 10,
             display: "flex",
             alignItems: "center",
@@ -112,7 +112,7 @@ export const Areas = () => {
         },
 
         iconImage: {
-            width: isMobile ? "1.5vw" : "5vw"
+            width: isDesktop ? "1.5vw" : "5vw"
         },
 
         boxTitle: {
@@ -129,9 +129,9 @@ export const Areas = () => {
         boxButton: {
             backgroundColor: "#ffffff",
             color: "#000000",
-            width: isMobile ? "10vw" : "40vw",
-            height: isMobile ? "4.5vh" : "4vh",
-            fontSize: isMobile ? "" : "12px",
+            width: isDesktop ? "10vw" : "40vw",
+            height: isDesktop ? "4.5vh" : "4vh",
+            fontSize: isDesktop ? "" : "12px",
             borderRadius: 5,
             padding: 0,
             alignSelf: "left",

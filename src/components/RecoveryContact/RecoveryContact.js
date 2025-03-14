@@ -2,7 +2,7 @@ import { Button, useMediaQuery } from "@mui/material";
 
 export const RecoveryContact = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -11,16 +11,16 @@ export const RecoveryContact = () => {
             width: "100vw",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             alignItems: "center",
-            justifyContent: isMobile ? "center" : "space-between"
+            justifyContent: isDesktop ? "center" : "space-between"
         },
     
         card: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "30vw" : "100vw",
-            height: isMobile ? "auto" : "40vh",
+            width: isDesktop ? "30vw" : "100vw",
+            height: isDesktop ? "auto" : "40vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -31,12 +31,12 @@ export const RecoveryContact = () => {
         },
     
         title: {
-            width: isMobile ? "25vw" : "80vw",
-            fontSize: isMobile ? "" : "20px"
+            width: isDesktop ? "25vw" : "80vw",
+            fontSize: isDesktop ? "" : "20px"
         },
     
         iconRow: {
-            width: isMobile ? "25vw" : "80vw",
+            width: isDesktop ? "25vw" : "80vw",
             display: "flex",
             flexDirection: "row",
             justifyContent: "flex-start"
@@ -48,30 +48,30 @@ export const RecoveryContact = () => {
         },
     
         description: {
-            width: isMobile ? "25vw" : "80vw",
+            width: isDesktop ? "25vw" : "80vw",
             fontWeight: 300
         },
     
         form: {
-            width: isMobile  ? "30vw" : "100vw",
+            width: isDesktop  ? "30vw" : "100vw",
             height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-between",
             textAlign: "left",
-            marginBottom: isMobile ? 0 : "5vh"
+            marginBottom: isDesktop ? 0 : "5vh"
         },
     
         label: {
-            width: isMobile ? "25vw" : "80vw",
+            width: isDesktop ? "25vw" : "80vw",
             margin: 0
         },
     
         input: {
             background: "none",
             color: "#757575",
-            width: isMobile ? "25vw" : "80vw",
+            width: isDesktop ? "25vw" : "80vw",
             height: "5vh",
             marginBottom: "2.5vh",
             boxSizing: "border-box",
@@ -85,7 +85,7 @@ export const RecoveryContact = () => {
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "25vw" : "80vw",
+            width: isDesktop ? "25vw" : "80vw",
             height: "auto",
             padding : 0,
             borderRadius: 5

@@ -6,7 +6,7 @@ export const RecoveryInfo = () => {
     const [muted, setMuted] = useState(true);
     const handleToggleMute = () => setMuted(current => !current);
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -23,13 +23,13 @@ export const RecoveryInfo = () => {
             width: "100vw",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             alignItems: "center",
             justifyContent: "center"
         },
 
         boxContent: {
-            width: isMobile ? "50vw" : "100vw",
+            width: isDesktop ? "50vw" : "100vw",
             height: "auto",
             display: "flex",
             flexDirection: "row",
@@ -46,25 +46,25 @@ export const RecoveryInfo = () => {
         },
 
         textBox: {
-            width: isMobile ? "30vw" : "90vw",
+            width: isDesktop ? "30vw" : "90vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "flex-start" : "center",
-            margin: isMobile ? 0 : "5vh 0 0 0",
+            alignItems: isDesktop ? "flex-start" : "center",
+            margin: isDesktop ? 0 : "5vh 0 0 0",
             padding: "5vh 0 5vh 0"
         },
 
         image: {
-            width: isMobile ? "40vw" : "80vw",
-            margin: isMobile ? 0 : "6vh 0 0 0"
+            width: isDesktop ? "40vw" : "80vw",
+            margin: isDesktop ? 0 : "6vh 0 0 0"
         },
 
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "17.5vw" : "70vw",
+            width: isDesktop ? "17.5vw" : "70vw",
             height: "auto",
-            marginBottom: isMobile ? "2vw" : 0,
+            marginBottom: isDesktop ? "2vw" : 0,
             borderRadius: 5,
             padding: 0
         },
@@ -82,7 +82,7 @@ export const RecoveryInfo = () => {
         },
 
         video: {
-            width: isMobile ? "55vw" : "80vw",
+            width: isDesktop ? "55vw" : "80vw",
             margin: "5vh 0 5vh 0"
         }
     }

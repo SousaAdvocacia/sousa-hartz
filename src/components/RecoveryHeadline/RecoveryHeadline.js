@@ -4,7 +4,7 @@ import { useState } from "react";
 export const RecoveryHeadline = () => {
     const pages = ['Home', 'Sobre', 'Atuação', 'Institucional', "Blog", "Contato"];
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
 
@@ -15,28 +15,28 @@ export const RecoveryHeadline = () => {
             backgroundRepeat: 'no-repeat',
             color: "#ffffff",
             width: "100vw",
-            height: isMobile ? "75vh" : "120vh",
+            height: isDesktop ? "75vh" : "120vh",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column-reverse"
+            flexDirection: isDesktop ? "row" : "column-reverse"
         },
     
         box: {
             backgroundColor: "rgba(0, 0, 0, 0.5)",
-            width: isMobile ? "50vw" : "100vw",
+            width: isDesktop ? "50vw" : "100vw",
             height: "75vh",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column-reverse",
-            alignItems: isMobile ? "flex-end" : "center",
+            flexDirection: isDesktop ? "row" : "column-reverse",
+            alignItems: isDesktop ? "flex-end" : "center",
             justifyContent: "center",
             boxSizing: "border-box"
         },
     
         textBox: {
-            width: isMobile  ? "25vw" : "80vw",
+            width: isDesktop  ? "25vw" : "80vw",
             display: "flex",
             flexDirection: "column",
-            margin: isMobile ? "0 0 4vw 5vw" : 0,
-            textAlign: isMobile ? "left" : "center"
+            margin: isDesktop ? "0 0 4vw 5vw" : 0,
+            textAlign: isDesktop ? "left" : "center"
         },
     
         title: {
@@ -52,12 +52,12 @@ export const RecoveryHeadline = () => {
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "17.5vw" : "50vw",
+            width: isDesktop ? "17.5vw" : "50vw",
             height: "auto",
             marginBottom: "2vw",
             padding: 0,
             borderRadius: 5,
-            alignSelf: isMobile ? "start" : "center",
+            alignSelf: isDesktop ? "start" : "center",
             filter: "drop-shadow(3px 3px 3px #000000)"
         },
 
@@ -66,7 +66,7 @@ export const RecoveryHeadline = () => {
         },
     
         profile: {
-            height: isMobile ? "55vh" : "40vh",
+            height: isDesktop ? "55vh" : "40vh",
             marginTop: "auto",
         }
     }

@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mui/material";
 
 export const InsuranceInfo = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -17,15 +17,15 @@ export const InsuranceInfo = () => {
         },
 
         title: {
-            width: isMobile ? "60vw" : "90vw",
-            fontSize: isMobile ? "" : "22px",
+            width: isDesktop ? "60vw" : "90vw",
+            fontSize: isDesktop ? "" : "22px",
             textAlign: "center"
         },
 
         description: {
-            width: isMobile ? "60vw" : "90vw",
+            width: isDesktop ? "60vw" : "90vw",
             textAlign: "center",
-            fontSize: isMobile ? "" : "18px",
+            fontSize: isDesktop ? "" : "18px",
             fontWeight: 100
         }
     }

@@ -3,7 +3,7 @@ import data from "./data.json";
 
 export const RecoveryAccordion = () => {
     
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -20,14 +20,14 @@ export const RecoveryAccordion = () => {
             width: "100vw",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             alignItems: "center",
             justifyContent: "center",
             overflow: "hidden"
         },
 
         boxContent: {
-            width: isMobile ? "50vw" : "100vw",
+            width: isDesktop ? "50vw" : "100vw",
             height: "auto",
             display: "flex",
             flexDirection: "row",
@@ -36,11 +36,11 @@ export const RecoveryAccordion = () => {
         },
 
         textBox: {
-            width: isMobile ? "30vw" : "90vw",
+            width: isDesktop ? "30vw" : "90vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "flex-start" : "center",
-            margin: isMobile ? 0 : "5vh 0 0 0"
+            alignItems: isDesktop ? "flex-start" : "center",
+            margin: isDesktop ? 0 : "5vh 0 0 0"
         },
 
         title: {
@@ -53,17 +53,17 @@ export const RecoveryAccordion = () => {
 
         accordionBox: {
             backgroundColor: "#bf996f",
-            width: isMobile ? "50vw" : "100vw",
+            width: isDesktop ? "50vw" : "100vw",
             height: "auto",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            padding: isMobile ? "5vh 0 5vh 0" : "2vw"
+            padding: isDesktop ? "5vh 0 5vh 0" : "2vw"
         },
 
         accordion: {
-            width: isMobile ? "45vw" : "96.25vw"
+            width: isDesktop ? "45vw" : "96.25vw"
         },
 
         accordionOpen: {

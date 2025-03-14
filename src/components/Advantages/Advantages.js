@@ -3,31 +3,31 @@ import { Button, useMediaQuery } from "@mui/material"
 
 export const Advantages = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
             backgroundColor: "#ffffff",
             color: "#000000",
             width: "100vw",
-            height: isMobile ? "auto" : "100vh",
+            height: isDesktop ? "auto" : "100vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         },
 
         box: {
-            width: isMobile ? "70%" : "100%",
+            width: isDesktop ? "70%" : "100%",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             alignItems: "center",
             justifyContent: "space-between",
             marginTop: "4vh"
         },
 
         titleBox: {
-            width: isMobile ? "55%" : "80%",
+            width: isDesktop ? "55%" : "80%",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -36,7 +36,7 @@ export const Advantages = () => {
         },
 
         textArea: {
-            width: isMobile ? "50%" : "80%",
+            width: isDesktop ? "50%" : "80%",
             display: "flex",
             flexDirection: "column",
             alignItems: "start"
@@ -45,7 +45,7 @@ export const Advantages = () => {
         title: {
             width: "100%",
             fontSize: "40px",
-            textAlign: isMobile ? "left" : "center"
+            textAlign: isDesktop ? "left" : "center"
         },
 
         button: {
@@ -55,7 +55,7 @@ export const Advantages = () => {
             height: "auto",
             borderRadius: 5,
             padding: 0,
-            alignSelf: isMobile ? "start" : "center"
+            alignSelf: isDesktop ? "start" : "center"
         },
 
         buttonText: {
@@ -63,7 +63,7 @@ export const Advantages = () => {
         },
 
         cardSection: {
-            width: isMobile ? "45%" : "80%",
+            width: isDesktop ? "45%" : "80%",
             height: "auto",
             display: "flex",
             flexDirection: "column",

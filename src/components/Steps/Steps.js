@@ -3,7 +3,7 @@ import data from "./data.json";
 
 export const Steps = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
@@ -40,18 +40,18 @@ export const Steps = () => {
     
         stepsRow: {
             backgroundColor: "#efefef",
-            width: isMobile ? "60vw" : "80vw",
+            width: isDesktop ? "60vw" : "80vw",
             height: "auto",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             justifyContent: "space-between",
             marginBottom: "3vh",
-            paddingTop: isMobile ? 0 : "5vh"
+            paddingTop: isDesktop ? 0 : "5vh"
         },
     
         step: {
             width: "12vw",
-            height: isMobile ? "auto" : "30vh",
+            height: isDesktop ? "auto" : "30vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -59,33 +59,33 @@ export const Steps = () => {
             textAlign: "center",
             margin: "0 auto auto auto",
             boxSizing: "border-box",
-            padding: isMobile ? "2.5vh" : 0
+            padding: isDesktop ? "2.5vh" : 0
         },
 
         stepNumber: {
-            margin: isMobile ? "" : "1vh"
+            margin: isDesktop ? "" : "1vh"
         },
     
         stepTitle: {
-            width: isMobile ? "12vw" : "60vw",
-            margin : isMobile ? "" : "1vh"
+            width: isDesktop ? "12vw" : "60vw",
+            margin : isDesktop ? "" : "1vh"
         },
     
         line: {
             backgroundColor: "#000000",
-            width: isMobile ? "10vw" : "60vw",
+            width: isDesktop ? "10vw" : "60vw",
             height: "0.1vh"
         },
     
         stepDescription: {
-            width: isMobile ? "12vw" : "75vw",
+            width: isDesktop ? "12vw" : "75vw",
             fontWeight: 300
         },
     
         button: {
             backgroundColor: "#bf996f",
             color: "#ffffff",
-            width: isMobile ? "35vw" : "80vw",
+            width: isDesktop ? "35vw" : "80vw",
             height: "auto",
             marginTop: "auto",
             padding: 0,

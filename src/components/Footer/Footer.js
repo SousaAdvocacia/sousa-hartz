@@ -2,14 +2,14 @@ import { useMediaQuery } from "@mui/material";
 
 export const Footer = () => {
 
-    const isMobile = useMediaQuery('(min-width:1000px)');
+    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const styles = {
         main: {
             backgroundColor: "#000000",
             color: "#ffffff",
             width: "100vw",
-            height: isMobile ? "70vh" : "140vh",
+            height: isDesktop ? "70vh" : "140vh",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -17,37 +17,37 @@ export const Footer = () => {
         },
     
         box: {
-            width: isMobile ? "70vw" : "90vw",
-            height: isMobile ? "35vh" : "130vh",
+            width: isDesktop ? "70vw" : "90vw",
+            height: isDesktop ? "35vh" : "130vh",
             display: "flex",
-            flexDirection: isMobile ? "row" : "column",
+            flexDirection: isDesktop ? "row" : "column",
             alignItems: "flex-start",
-            justifyContent: isMobile ? "space-between" : "space-between",
+            justifyContent: isDesktop ? "space-between" : "space-between",
         },
     
         content: {
-            width: isMobile ? "15vw" : "90vw",
+            width: isDesktop ? "15vw" : "90vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: isMobile ? "flex-start":"center",
-            textAlign: isMobile ? "left":"center",
+            alignItems: isDesktop ? "flex-start":"center",
+            textAlign: isDesktop ? "left":"center",
             justifyContent: "space-between"
         },
     
         logo: {
-            height: isMobile ? "7.5vh" : "12vh",
-            alignSelf: isMobile ? "flex-start" : "center",
-            margin: isMobile ? "0 0 2vw 0" : "0 0 5vh 0"
+            height: isDesktop ? "7.5vh" : "12vh",
+            alignSelf: isDesktop ? "flex-start" : "center",
+            margin: isDesktop ? "0 0 2vw 0" : "0 0 5vh 0"
         },
     
         title: {
-            width: isMobile ? "15vw" : "80vw",
-            margin: isMobile ? "0 0 2vw 0" : "0 0 3vh 0",
-            textAlign: isMobile ? "left" : "center"
+            width: isDesktop ? "15vw" : "80vw",
+            margin: isDesktop ? "0 0 2vw 0" : "0 0 3vh 0",
+            textAlign: isDesktop ? "left" : "center"
         },
     
         description: {
-            width: isMobile ? "15vw" : "70vw",
+            width: isDesktop ? "15vw" : "70vw",
             fontWeight: 300,
             margin: 0
         },
@@ -62,10 +62,10 @@ export const Footer = () => {
         },
     
         iconRow: {
-            width: isMobile ? "6vw" : "20svw",
+            width: isDesktop ? "6vw" : "20svw",
             display: "flex",
             justifyContent: "space-between",
-            alignSelf: isMobile ? "flex-start" : "center",
+            alignSelf: isDesktop ? "flex-start" : "center",
             margin: "0 0 2vw 0"
         },
     
@@ -74,7 +74,7 @@ export const Footer = () => {
         },
     
         map: {
-            width: isMobile ? "100%" : "70%"
+            width: isDesktop ? "100%" : "70%"
         }
     }
 
