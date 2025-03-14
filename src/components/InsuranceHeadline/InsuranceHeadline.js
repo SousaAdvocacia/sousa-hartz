@@ -81,19 +81,6 @@ export const InsuranceHeadline = () => {
             height: "90%",
             width: "70%",
             objectFit: "cover"
-        },
-
-        videoBox: {
-            width: "100vw",
-            height: isMobile ? "70vh" : "40vh",
-            display: "flex",
-            alignItems: isMobile ? "flex-start" : "center",
-            alignItems: "center",
-            justifyContent: "center"
-        },
-
-        video: {
-            width: isMobile ? "55vw" : "90vw"
         }
     }
 
@@ -104,13 +91,12 @@ export const InsuranceHeadline = () => {
 
                 <div style={styles.textBox}>
 
-                    <h1 style={styles.title}>Mais de 20 anos de atuação na advocacia</h1>
+                    <h1 style={styles.title}>ENTENDA SOBRE RECUPERAÇÃO JUDICIAL</h1>
 
                     <h2 style={styles.description}>
 
-                    Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes 
-                    (UCAM), Pós graduando em Direito do Consumidor, Membro da comissão de direito do consumidor da 30ª subseção da OAB/RJ– Santa Cruz, 
-                    atuante na área do direito bancário desde o ano de 2015.
+                    A recuperação judicial configura-se como um procedimento legal previsto na Lei nº 11.101/2005, que visa à superação da situação de crise 
+                    econômico-financeira do devedor, possibilitando a preservação da empresa, sua função social e o estímulo à atividade econômica.
 
                     </h2>
 
@@ -126,20 +112,6 @@ export const InsuranceHeadline = () => {
                     <img style={styles.image} src="profile-about.png" />
                 </div>
 
-            </div>
-
-            <div style={styles.videoBox}>
-                <div style={styles.video}>
-                    <ReactPlayer
-                        width="100%"
-                        height="100%"
-                        playing={true}
-                        muted={muted}
-                        url="/intro-video.mp4"
-                        position="absolute"
-                        onClick={() => { (handleToggleMute()) }}
-                    />
-                </div>
             </div>
         </div>
     )
