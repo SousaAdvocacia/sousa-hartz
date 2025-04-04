@@ -1,6 +1,11 @@
 [
+    
     {
-        "name": "Contatar via WhatsApp",
+        "name": "Negociação",
+        "slug": "https://wa.me/5521983653699"
+    },
+    {
+        "name": "Suporte",
         "slug": "https://wa.me/5521998703035"
     },
     {

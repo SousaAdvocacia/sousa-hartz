@@ -1,6 +1,6 @@
 import { AppBar, Button, useMediaQuery } from "@mui/material";
 import { useState } from "react";
-import data from "./data.json";
+import data from "../Nav/data.json";
 
 export const NavMobile = () => {
     const isMobile = useMediaQuery('(min-width:1000px)');
