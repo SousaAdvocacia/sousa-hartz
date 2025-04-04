@@ -102,19 +102,24 @@ export const RecoveryInfo = () => {
                         <h2 style={styles.title}>• LACERDA NETO ADVOCACIA</h2>
 
                         <h3 style={styles.description}>
-                            <strong>QUEM É DR. NILTON LACERDA</strong>
+                            <strong>QUEM É JONATHAN SOUSA</strong>
                             <br />
-                            O escritório de advocacia liderado pelo Dr. Nilton de Lacerda Neto, com o respaldo e a vasta experiência de seu pai, Dr. Nilton de Lacerda Filho,
-                            advogado com mais de 36 anos de atuação e reconhecida reputação na comunidade jurídica.
+                            Advogado, formado pela Universidade Estácio de Sá (UNESA) em 2019, Pós Graduado em Direito Militar pela Universidade Cândido Mendes
+                            (UCAM), Pós graduando em Direito do Consumidor, Membro da comissão de direito do consumidor da 30ª subseção da OAB/RJ– Santa Cruz,
+                            atuante na área do direito bancário desde o ano de 2015.
                             <br />
+                            Iniciei minha trajetória no direito em 2013 quando ingressei na universidade, posteriormente tive a oportunidade de estagiar e
+                            trabalhar como advogado em grandes escritórios renomados do Rio de Janeiro, atuando no direito bancário em favor de grandes
+                            instituições financeiras.
                             <br />
-                            Fundado pelo Dr. Nilton de Lacerda Filho, o escritório consolidou-se ao longo das décadas como referência em serviços jurídicos de alta
-                            qualidade. Com a chegada da segunda geração, o Dr. Nilton de Lacerda Neto agrega uma visão inovadora e estratégica, unindo seu conhecimento e
-                            habilidades à expertise do pai para oferecer soluções jurídicas eficientes e personalizadas.
+                            Hoje minha missão é atuar em prol dos consumidores, defendendo seus interesses e buscando justiça, lutando para buscar transparência e
+                            juros corretos em seus contratos com as instituições financeiras.
                             <br />
+                            Eu optei em atuar em defesa dos consumidores ante as arbitrariedades e abusividades nas realações de consumo, onde  o consumidor
+                            sempre é prejudicado por ser a parte mais vulnerável na relação.
                             <br />
-                            Com uma equipe altamente qualificada, o escritório atua em diversas áreas do direito, garantindo que cada caso seja conduzido com
-                            comprometimento, ética e excelência, sempre em busca dos melhores resultados para seus clientes.
+                            Nosso compromisso é priorizar o consumidor e através de nossa atuação combativa e humanizada, assegurar a garantia dos direitos de
+                            nossos clientes.
                         </h3>
 
                         <Button variant="container" style={styles.button}>
