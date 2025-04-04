@@ -99,7 +99,7 @@ export const RecoveryInfo = () => {
                 <div style={styles.boxContent}>
                     <div style={styles.textBox}>
 
-                        <h2 style={styles.title}>• LACERDA NETO ADVOCACIA</h2>
+                        <h2 style={styles.title}>• SOUSA ADVOCACIA</h2>
 
                         <h3 style={styles.description}>
                             <strong>QUEM É JONATHAN SOUSA</strong>
