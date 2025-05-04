@@ -3,4 +3,4 @@ services:
     build: .
     container_name: sousahartz
     ports:
-      - '3000:3000'
+      - '3200:3000'
