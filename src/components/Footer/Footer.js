@@ -106,7 +106,7 @@ export const Footer = () => {
                         <br />
                         <span><img style={styles.textIcon} src="/phone.png" /> (21) 99900-3367 </span>
                         <br />
-                        <span>CNPJ: 58.531.639/0001-83 </span>
+                        <span>CNPJ: 60.815.756/0001-10 </span>
                     </h3>
 
                 </div>
