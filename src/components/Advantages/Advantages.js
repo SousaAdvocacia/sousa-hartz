@@ -23,7 +23,7 @@ export const Advantages = () => {
             flexDirection: isDesktop ? "row" : "column",
             alignItems: "center",
             justifyContent: "space-between",
-            marginTop: "4vh"
+            margin: "4vh 0 4vh 0"
         },
 
         titleBox: {
@@ -108,7 +108,7 @@ export const Advantages = () => {
 
                         <h1 style={styles.title}>Por que escolher nosso escritório?</h1>
 
-                        <Button variant="container" style={styles.button}>
+                        <Button variant="container" style={styles.button} target="_blank" href="https://wa.me/5521983654839?text=Gostaria%20de%20um%20suporte%20com%20o%20jur%C3%ADdico%20da%20Sousa%20Advocacia!">
                             <h3 style={styles.buttonText}>
                                 Entre em contato
                             </h3>

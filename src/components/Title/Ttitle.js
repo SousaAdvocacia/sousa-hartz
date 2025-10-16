@@ -7,12 +7,12 @@ export const Title = () => {
     const styles = {
         main: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
-            backgroundPosition: 'bottom',
+            backgroundPosition: isDesktop ? 'center' : "top",
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             color: "#ffffff",
             width: "100vw",
-            height: isDesktop? "100vh" : "80vh",
+            height: isDesktop? "100vh" : "50vh",
             display: "flex",
             flexDirection: "column"
         },

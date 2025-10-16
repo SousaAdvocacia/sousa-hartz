@@ -49,7 +49,8 @@ export const InsuranceAbout = () => {
             width: isDesktop ? "20vw" : "60vw",
             height: isDesktop ? "55vh" : "40vh",
             objectFit: "cover",
-            marginBottom: isDesktop ? 0 : "2vh"
+            marginBottom: isDesktop ? 0 : "2vh",
+            objectPosition: isDesktop ? "auto" : "50% 20%"
         }
     }
 

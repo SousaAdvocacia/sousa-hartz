@@ -45,7 +45,8 @@ export const HomeAbout = () => {
         image: {
             height: isDesktop ? "100%" : "50vh",
             width: isDesktop ? "35%" : "100%",
-            objectFit: "cover"
+            objectFit: "cover",
+            objectPosition: '50% 20%'
         }
     }
 

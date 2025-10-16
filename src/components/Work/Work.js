@@ -16,7 +16,7 @@ export const Work = () => {
         },
 
         topBox: {
-            backgroundImage: "url(" + "/office-background.jpg" + ")",
+            backgroundImage: isDesktop ? "url(" + "/office-bg.jpg" + ")" : "",
             backgroundPosition: 'left',
             backgroundSize: isDesktop ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
@@ -44,7 +44,7 @@ export const Work = () => {
         },
 
         bottomBox: {
-            backgroundImage: "url(" + "/office-background.jpg" + ")",
+            backgroundImage: isDesktop ? "url(" + "/office-bg.jpg" + ")" : "",
             backgroundPosition: 'right',
             backgroundSize: isDesktop ? '45% 100%' : "100% 100%",
             backgroundRepeat: 'no-repeat',
