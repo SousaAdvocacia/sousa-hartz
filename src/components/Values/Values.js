@@ -16,7 +16,7 @@ export const Values = () => {
         },
 
         box: {
-            width: isDesktop ? "60%" : "100%",
+            width: isDesktop ? "80%" : "100%",
             height: "auto",
             display: "flex",
             flexDirection: isDesktop ? "" : "column-reverse",
@@ -26,7 +26,7 @@ export const Values = () => {
         },
 
         textBox: {
-            width: "55%",
+            width: "50%",
             height: "80%",
             display: "flex",
             flexDirection: isDesktop ? "row" : "column",
@@ -59,7 +59,7 @@ export const Values = () => {
         },
 
         imageBox: {
-            width: isDesktop ? "40%" : "100%",
+            width: isDesktop ? "45%" : "100%",
             height: isDesktop ? "100%" : "30%"
         },
 
