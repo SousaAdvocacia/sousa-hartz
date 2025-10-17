@@ -7,24 +7,24 @@ export const Title = () => {
     const styles = {
         main: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
-            backgroundPosition: isDesktop ? 'center' : "top",
+            backgroundPosition: isDesktop ? '0 40%' : "top",
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             color: "#ffffff",
             width: "100vw",
-            height: isDesktop? "100vh" : "50vh",
+            height: isDesktop? "90vh" : "50vh",
             display: "flex",
             flexDirection: "column"
         },
 
         box: {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(0, 0, 0, 0)",
             width: "100vw",
             height: "100vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "end",
             boxSizing: "border-box"
         },
 
@@ -33,9 +33,10 @@ export const Title = () => {
             display: "flex",
             flexDirection: "column",
             alignSelf: "flex-start",
-            alignItems: "center",
+            alignItems: "start",
             justifyContent: "center",
-            textAlign: isDesktop ? "left" : "center"
+            textAlign: isDesktop ? "left" : "center",
+            margin: "0 0 5vh 15vh"
         },
         
         title: {
@@ -55,6 +56,7 @@ export const Title = () => {
 
     return (
         <div style={styles.main}>
+            {/*
             <div style={styles.box}>
 
                 <div style={styles.textBox}>
@@ -69,6 +71,7 @@ export const Title = () => {
                 </div>
 
             </div>
+            */}
         </div>
     )
 }

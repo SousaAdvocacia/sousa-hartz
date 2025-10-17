@@ -16,10 +16,6 @@ export const Work = () => {
         },
 
         topBox: {
-            backgroundImage: isDesktop ? "url(" + "/office-bg.jpg" + ")" : "",
-            backgroundPosition: 'left',
-            backgroundSize: isDesktop ? '45% 100%' : "100% 100%",
-            backgroundRepeat: 'no-repeat',
             width: "100%",
             height: isDesktop ? "auto" : "110vh",
             marginBottom: "10vh",
@@ -44,10 +40,6 @@ export const Work = () => {
         },
 
         bottomBox: {
-            backgroundImage: isDesktop ? "url(" + "/office-bg.jpg" + ")" : "",
-            backgroundPosition: 'right',
-            backgroundSize: isDesktop ? '45% 100%' : "100% 100%",
-            backgroundRepeat: 'no-repeat',
             width: "100%",
             height: isDesktop ? "auto" : "110vh",
             display: "flex",
