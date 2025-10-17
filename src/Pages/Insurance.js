@@ -15,7 +15,6 @@ export const Insurance = () => {
             <Work />
             <InsuranceAbout />
             <Advantages />
-            <RecoveryContact />
         </div>
     )
 }

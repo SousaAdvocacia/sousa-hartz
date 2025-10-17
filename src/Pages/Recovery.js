@@ -20,7 +20,6 @@ export const Recovery = () => {
             {isDesktop ? <Cards /> : <CardsMobile />}
             <Steps />
             <Swipers />
-            <RecoveryContact />
         </div>
     )
 }

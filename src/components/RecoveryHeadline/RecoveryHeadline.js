@@ -91,7 +91,7 @@ export const RecoveryHeadline = () => {
                         Nós somos especialistas neste tema e iremos ajudar você.
                     </h3>
 
-                    <Button variant="container" style={styles.button}>
+                    <Button variant="container" style={styles.button} target="_blank" href="https://wa.me/5521983654839?text=Gostaria%20de%20um%20suporte%20com%20o%20jur%C3%ADdico%20da%20Sousa%20Advocacia!">
                         <h3 style={styles.buttonText}>
                             Entre em contato
                         </h3>
