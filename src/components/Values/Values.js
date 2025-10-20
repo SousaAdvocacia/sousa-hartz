@@ -26,7 +26,7 @@ export const Values = () => {
         },
 
         textBox: {
-            width: "50%",
+            width: isDesktop ? "50%" : "70%",
             height: "80%",
             display: "flex",
             flexDirection: isDesktop ? "row" : "column",
@@ -65,7 +65,7 @@ export const Values = () => {
 
         image: {
             width: "100%",
-            height: isDesktop ? "" : "35vh",
+            height: isDesktop ? "" : "auto",
             objectFit: isDesktop ? "" : "cover"
         }
     }
