@@ -3,16 +3,18 @@ import { useMediaQuery } from "@mui/system"
 export const Title = () => {
 
     const isDesktop = useMediaQuery('(min-width:1000px)');
+    const isWidescreen = useMediaQuery('(min-width:1900px)');
 
     const styles = {
         main: {
             backgroundImage: "url(" + "/office-background.jpg" + ")",
-            backgroundPosition: isDesktop ? '0 40%' : "top",
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
+            backgroundColor: "#000000",
+            backgroundPosition: isDesktop ? isWidescreen ? "0 65%" : 'bottom' : "center",
+            backgroundSize: isDesktop ? "cover" : "100%",
+            backgroundRepeat: "no-repeat",
             color: "#ffffff",
             width: "100vw",
-            height: isDesktop? "90vh" : "50vh",
+            height: isDesktop ? "100vh" : "50vh",
             display: "flex",
             flexDirection: "column"
         },
