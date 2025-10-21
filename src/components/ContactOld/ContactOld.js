@@ -118,7 +118,7 @@ export const ContactOld = () => {
                     <h3 style={styles.description}>
                         Ayrton Senna 2500 Office 3 Sala 227/228 
                         <br />
-                        (21) 99900-3367
+                        (21) 97250-0874
                         <br />
                         advocacia@sousahartz.com.br
                     </h3>

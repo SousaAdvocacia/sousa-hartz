@@ -109,7 +109,7 @@ export const RecoveryContact = () => {
                 </div>
 
                 <h3 style={styles.description}>
-                    (21) 99900-3367
+                    (21) 97250-0874
                     <br/>
                     Jonathan Sousa
                     <br/>
