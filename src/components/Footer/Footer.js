@@ -104,7 +104,7 @@ export const Footer = () => {
 
                         <span><img style={styles.textIcon} src="/email.png" /> advocacia@sousahartz.com.br </span>
                         <br />
-                        <span><img style={styles.textIcon} src="/phone.png" /> (21) 99900-3367 </span>
+                        <span><img style={styles.textIcon} src="/phone.png" /> (21) 97250-0874 </span>
                         <br />
                         <span>CNPJ: 60.815.756/0001-10 </span>
                     </h3>
