@@ -4,7 +4,7 @@ import data from "./data.json";
 export const ActivityList = () => {
     const styles = {
         main: {
-            backgroundImage: "url(" + "/office-background.jpg" + ")",
+            backgroundImage: "url(/office-background.jpg)",
             backgroundPosition: 'bottom',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -22,10 +22,7 @@ export const ActivityList = () => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            boxSizing: "border-box",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
+            boxSizing: "border-box"
         },
 
         content: {

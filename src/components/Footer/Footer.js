@@ -85,7 +85,7 @@ export const Footer = () => {
 
                 <div style={styles.content}>
 
-                    <img style={styles.logo} src="/logo.png" />
+                    <img style={styles.logo} src="/logo.png" alt=""/>
 
                     <h3 style={styles.description}>
                         Atuação consultiva e contenciosa em Direito Empresarial, Tributário, Bancário, Cível e áreas afins. Especialidade em Recuperação
@@ -102,9 +102,9 @@ export const Footer = () => {
 
                     <h3 style={styles.description}>
 
-                        <span><img style={styles.textIcon} src="/email.png" /> advocacia@sousahartz.com.br </span>
+                        <span><img style={styles.textIcon} src="/email.png" alt=""/> advocacia@sousahartz.com.br </span>
                         <br />
-                        <span><img style={styles.textIcon} src="/phone.png" /> (21) 97250-0874 </span>
+                        <span><img style={styles.textIcon} src="/phone.png" alt=""/> (21) 97250-0874 </span>
                         <br />
                         <span>CNPJ: 60.815.756/0001-10 </span>
                     </h3>
@@ -132,9 +132,9 @@ export const Footer = () => {
                 <div style={styles.content}>
 
                     <div style={styles.iconRow}>
-                        <img style={styles.icon} src="/linkedin.png" />
-                        <img style={styles.icon} src="/instagram.png" />
-                        <img style={styles.icon} src="/email.png" />
+                        <img style={styles.icon} src="/linkedin.png" alt=""/>
+                        <img style={styles.icon} src="/instagram.png" alt=""/>
+                        <img style={styles.icon} src="/email.png" alt=""/>
                     </div>
 
                 </div>
