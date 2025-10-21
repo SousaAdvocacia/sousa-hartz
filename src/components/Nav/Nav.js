@@ -1,9 +1,8 @@
-import { AppBar, useMediaQuery } from "@mui/material";
+import { AppBar } from "@mui/material";
 import { useState } from "react";
 import data from "./data.json";
 
 export const Nav = () => {
-    const isDesktop = useMediaQuery('(min-width:1000px)');
 
     const [color, setColor] = useState(true)
     const changeColor = () => {
@@ -54,7 +53,7 @@ export const Nav = () => {
     return (
         <AppBar style={styles.nav}>
             <div style={styles.navbarBox}>
-                <img style={styles.logo} src="/logo.png" />
+                <img style={styles.logo} src="/logo.png" alt=""/>
             </div>
 
             <div style={styles.navbarBox}>

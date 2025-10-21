@@ -9,6 +9,10 @@
         "slug": "https://wa.me/5521983654839?text=Gostaria%20de%20um%20suporte%20com%20o%20jur%C3%ADdico%20da%20Sousa%20Advocacia!"
     },
     {
+        "name": "Andamento Processual",
+        "slug": "https://wa.me/5521965540692?text=Gostaria%20de%20um%20suporte%20com%20o%20jur%C3%ADdico%20da%20Sousa%20Advocacia!"
+    },
+    {
         "name": "Home",
         "slug": "/"
     },
@@ -23,5 +27,9 @@
     {
         "name": "Institucional",
         "slug": "/#institucional"
+    },
+    {
+        "name": "Direito Rural",
+        "slug": "/rural"
     }
 ]

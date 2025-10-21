@@ -7,6 +7,7 @@ import { Home } from './Pages/Home';
 import { Nav } from './components/Nav/Nav';
 import { Footer } from './components/Footer/Footer';
 import { NavMobile } from './components/NavMobile/NavMobile';
+import { Rural } from './Pages/Rural';
 
 function App() {
 
@@ -16,13 +17,12 @@ function App() {
     main: {
       height: "auto",
       backgroundColor: "#ffffff",
-      backgroundImage: "url(" + "/office-background.jpg" + ")",
+      backgroundImage: "url(/office-background.jpg)",
       backgroundPosition: 'bottom',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       display: "flex",
       flexDirection: "column",
-      justifyContent: "space-around",
       alignItems: "center",
       justifyContent: "center",
       fontSize: isDesktop ? "16px" : "14px",
@@ -41,6 +41,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/recuperacao-judicial" element={<Recovery />} />
         <Route path="/securitario" element={<Insurance />} />
+        <Route path="/rural" element={<Rural />} />
 
       </Routes>
 

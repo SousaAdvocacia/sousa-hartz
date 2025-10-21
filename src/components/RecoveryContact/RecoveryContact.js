@@ -103,8 +103,8 @@ export const RecoveryContact = () => {
 
                 <div style={styles.iconRow}>
 
-                    <img style={styles.icon} src="/instagram.png"/>
-                    <img style={styles.icon} src="/linkedin.png"/>
+                    <img style={styles.icon} src="/instagram.png" alt=""/>
+                    <img style={styles.icon} src="/linkedin.png" alt=""/>
 
                 </div>
 
